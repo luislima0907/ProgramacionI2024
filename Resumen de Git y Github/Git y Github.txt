@@ -1,0 +1,62 @@
+﻿Luis Carlos Lima Pérez
+Carnet: 0907-23-20758
+Git
+Git es un sistema de control de versiones de código, como su nombre lo indica, es un programa que controla o administra las distintas versiones de un programa. Un programador o un desarrollador utiliza git porque quiere controlar un proyecto que va a crecer a medida que el tiempo avanza y este va haciendo los cambios en su proyecto, es decir, a medida que el proyecto va creciendo, también vamos a ir cambiando y modificando los archivos que tengamos en nuestro proyecto.
+
+
+Para controlar estos distintos cambios que vayamos realizando, podemos utilizar sistemas de control de versiones, el más popular actualmente es git, con este programa vamos a poder trabajar con un repositorio de código con múltiples desarrolladores que van a alterar ese código, pero todos los desarrolladores tienen una copia local de ese código así que podemos estar seguros de que siempre vamos a tener los últimos cambios que están afectando al código principal.
+
+
+Con git podemos navegar entre cualquier punto de la versión de nuestro programa, es decir, podemos ir viendo en qué días modificamos el código, quien lo modificó y en qué fecha. También se pueden revertir los cambios que hagamos o que otros programadores hagan. Git puede trabajar con repositorios locales y remotos, los repositorios son un computador que administra el código y lo va a guardar dentro de otro computador y luego ese código va a ser accesible a múltiples desarrolladores. 
+
+
+El LEAD es bastante grande, vamos a encontrar una enorme cantidad de comandos y operaciones con las configuraciones que hagamos, git nos brinda una manera de poder seguir los cambios en nuestro código, lo hace a través de unas snapshots, es decir, nos ayuda a poder tomarle como una especie de foto al código y luego podemos seguir avanzando en el código. También podemos ver esa snapshot del código para poder alterarla, copiarla o modificarla.
+
+
+Git es una herramienta que interactúa directamente con el sistema operativo, y esto lo hace a través de la consola, la cual, instala una especie de terminal base, que es como una consola pero con mejores funcionalidades. En git hay tres estados, uno se llama working directory, que es donde vamos a estar trabajando con todos los archivos, también existe un área que se llama staying, que es donde se van a agregar todos los archivos que tenemos preparados para el guardado, y finalmente el cambio que hagamos lo va a pasar a un repositorio.
+
+
+El comando git init es una manera en la cual nosotros vamos a poder decirle al sistema operativo que vamos a crear un proyecto nuevo, git give up es para poder pasar los archivos del working directory al stay área, git status es para ver en qué estado están tus archivos, git commit es para pasarlo desde el stay área al repositorio, git push es para subirlo a un repositorio remoto, git pool (en caso estés trabajando con múltiples desarrolladores) te trae los cambios que han hecho los otros desarrolladores y git clone te hace una copia desde el servidor central donde está el código a tu computador para que empiecen a trabajar de nuevo.
+
+
+En un terminal bash vamos a poder ejecutar comandos de unix, el comando ls sirve para listar directorios y archivos, pwd para ver en que ruta de nuestro sistema está posicionado el terminal, pero antes de empezar a trabajar con git, debemos de tener un repositorio de código y para eso tenemos que abrir la terminal “Git bash here” en el proyecto que contenga nuestra código.
+
+
+En la terminal podemos entrar al escritorio con el comando cd desktop y luego entramos a la carpeta de nuestro proyecto, usamos el comando git init para utilizar esta herramienta dentro del proyecto, se va a crear una nueva carpeta llamada .git, esta es una carpeta que se va a encargar de administrar todos los cambios del código, pero no vamos a poder modificar nada de ahí, se llama .git porque la carpeta está oculta y esto es para que git trabaje internamente.
+
+
+Después usamos el comando git status para que nos permita ver los archivos que tenemos, si lo ingresamos mal o nos aparecen los archivos del proyecto en color rojo, hay un comando que nos van a ayudar a poder agregarlos, ese es “git add <file>” o si queremos agregar todos los archivos que hayamos creado solo usamos el mismo comando pero le agregamos un espacio y un punto. Si queremos guardar un punto de control en nuestro código debemos de usar git commit, pero primero debemos de decirle a git quien está haciendo cambios en el programa, ya que, puede ser posible de que múltiples desarrolladores estén trabajando en el mismo proyecto.
+
+
+Para configurar el email del usuario debemos usar config –global user.email y ya con eso podemos dar un email y lo mismo podemos hacer si queremos darle un username a la persona que está modificando el código, para escribir un mensaje en el commit debemos de presionar la tecla “i” y luego escribir un mensaje, le damos a escape, dos puntos y wq y al finalizar le damos enter o también podemos usar git commit -m “nombre del commit” y para poder guardar todos nuestros commits en una carpeta debemos de escribir git branch, con eso, estaremos creando una rama (que es una especia de línea para desarrollar nuestro código) en nuestro código donde podamos ver que hemos hecho en el mismo, también se les agregara un ID a los archivos que estén dentro del proyecto.
+
+
+Git log nos sirve para ver todos los commits que hemos creado, ya sea en el proyecto o en diferentes partes del mismo, cuando lo ejecutas te dice el autor, su email y la fecha en la que hizo el commit. Para revertir los cambios de los archivos debemos de usar git checkout – y el nombre del archivo que deseas invertir. Para ver las diferencias hechas en los archivos usamos git diff. Si queremos ver el código donde estamos al momento de consultarlo con git log debemos de ver que diga Headmaster.
+
+
+Si nosotros deseamos ignorar un archivo en nuestro proyecto primero debemos de crear un archivo llamado .gitignore y para usarlo solo debemos de escribir los nombres de los archivos que queramos ignorar en nuestro proyecto. Aunque si nosotros tenemos carpetas vacías, git las ignorará por defecto. También está el comando git remote add que nos sirve para decirle a nuestro proyecto cuál es el origen o el lugar en el que vamos a almacenar nuestro código.
+
+
+Y estos serían los comandos más básicos de git que nos ayudarán a manipular el código de nuestro proyecto, pero si queremos hacerlo público para que otros desarrolladores nos ayuden a modificarlo debemos subirlo a github.
+Github
+Entrando a la página oficial de github, vamos a poder acceder a un montón de herramientas para desarrolladores, esta es una empresa que tiene bastante enfoque en el open source y 
+ayuda bastante con sus herramientas, una de las más famosas que consideran todos los desarrolladores es el repositorio de código, es un sitio web en el cual vamos a poder subir todos nuestros códigos de los proyectos que hagamos y poder acceder a ellos, tanto de manera privada, como de manera pública.
+
+
+Github solo te permite subir proyectos open source de manera gratuita, es decir, si queremos trabajar en un proyecto gratuito, será un proyecto open source, el cual lo podemos publicar hacia los demás. Una cuenta premium te sirve para subir proyectos reales. Para registrar una cuenta en github utilizamos el formulario de registro.
+
+
+En github vamos a poder ver el código de los proyectos, así que no necesitamos descargarlos para poder verlos. Lo primero que vamos a hacer para subir nuestro código a esta plataforma es lo siguiente: vamos a ir a el perfil que hemos creado, luego entramos a la parte que dice “Repositories” y creamos uno nuevo, después debemos agregarle un nombre para que sea identificable (tenemos que asegurarnos de no poner el mismo nombre en dos proyectos distintos), también podemos añadirle una descripción a nuestro repositorio para saber de qué se trata, una vez creado nos dará una url hacia un sitio web o servidor donde se guardará nuestro código.
+
+
+Pero para ingresar un archivo de código a un repositorio debemos de ejecutar unos comandos que aparecen en el mismo repositorio que hemos creado en nuestro git, los comandos son: git remote add origin “la url que aparece” y git push -u origin main o master, después de ejecutarlos, nos va a pedir iniciar sesión con nuestra cuenta de github para poder autenticar el repositorio, una vez finalizado ese proceso podemos ingresar a la url de nuestro repositorio y ahí ya podemos ver los archivos de código que contiene nuestro proyecto.
+
+
+Si nosotros llegáramos a borrar el proyecto de nuestro equipo no pasaría nada, ya que ya está subido a github y por lo tanto podemos descargarlo en formato zip que contenga todos los archivos que creamos ahí, pero para que nos funcione debemos de ejecutar un comando que nos active el git del proyecto, para eso abrimos una git bash terminal y escribimos git clone y el link que nos da el proyecto al momento de descargarlo.
+
+
+¿Qué diferencia hay entre Git y Github?
+En Git se puede modificar el código de nuestro proyecto en una terminal especializada y esto con la ayuda de ciertos comandos que nos ayudarán a estructurar nuestro código, y en cambio, en github solo es un repositorio donde guardamos y subimos nuestros proyectos en nuestra cuenta para que otros desarrolladores nos ayuden a modificarlo si así lo deseamos, ya que, existen los repositorios públicos y privados para tener diferentes alternativas de privacidad.
+
+
+Mi git y github: https://github.com/luislima0907/mi-proyecto.git
