@@ -59,4 +59,4 @@ Si nosotros llegáramos a borrar el proyecto de nuestro equipo no pasaría nada,
 En Git se puede modificar el código de nuestro proyecto en una terminal especializada y esto con la ayuda de ciertos comandos que nos ayudarán a estructurar nuestro código, y en cambio, en github solo es un repositorio donde guardamos y subimos nuestros proyectos en nuestra cuenta para que otros desarrolladores nos ayuden a modificarlo si así lo deseamos, ya que, existen los repositorios públicos y privados para tener diferentes alternativas de privacidad.
 
 
-Mi git y github: https://github.com/luislima0907/mi-proyecto.git
+Mi git y github: https://github.com/luislima0907/ProgramacionI2024
