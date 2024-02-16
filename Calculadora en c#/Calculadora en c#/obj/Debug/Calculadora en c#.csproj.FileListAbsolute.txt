@@ -1,0 +1,7 @@
+C:\Users\ruben\OneDrive\Desktop\Calculadora en c#\Calculadora en c#\bin\Debug\Calculadora en c#.exe.config
+C:\Users\ruben\OneDrive\Desktop\Calculadora en c#\Calculadora en c#\bin\Debug\Calculadora en c#.exe
+C:\Users\ruben\OneDrive\Desktop\Calculadora en c#\Calculadora en c#\bin\Debug\Calculadora en c#.pdb
+C:\Users\ruben\OneDrive\Desktop\Calculadora en c#\Calculadora en c#\obj\Debug\Calculadora en c#.csproj.AssemblyReference.cache
+C:\Users\ruben\OneDrive\Desktop\Calculadora en c#\Calculadora en c#\obj\Debug\Calculadora en c#.csproj.CoreCompileInputs.cache
+C:\Users\ruben\OneDrive\Desktop\Calculadora en c#\Calculadora en c#\obj\Debug\Calculadora en c#.exe
+C:\Users\ruben\OneDrive\Desktop\Calculadora en c#\Calculadora en c#\obj\Debug\Calculadora en c#.pdb
