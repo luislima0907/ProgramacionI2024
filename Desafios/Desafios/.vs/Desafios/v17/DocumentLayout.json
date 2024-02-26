@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ruben\\OneDrive\\Desktop\\Desafios\\Desafios\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E036496-0C41-4B28-B332-F3EB9A8F780D}|Desafios.csproj|c:\\users\\ruben\\onedrive\\desktop\\desafios\\desafios\\operacionesbasicas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E036496-0C41-4B28-B332-F3EB9A8F780D}|Desafios.csproj|solutionrelative:operacionesbasicas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E036496-0C41-4B28-B332-F3EB9A8F780D}|Desafios.csproj|c:\\users\\ruben\\onedrive\\desktop\\desafios\\desafios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E036496-0C41-4B28-B332-F3EB9A8F780D}|Desafios.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E036496-0C41-4B28-B332-F3EB9A8F780D}|Desafios.csproj|c:\\users\\ruben\\onedrive\\desktop\\desafios\\desafios\\promedioysumaconinstacia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E036496-0C41-4B28-B332-F3EB9A8F780D}|Desafios.csproj|solutionrelative:promedioysumaconinstacia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E036496-0C41-4B28-B332-F3EB9A8F780D}|Desafios.csproj|c:\\users\\ruben\\onedrive\\desktop\\desafios\\desafios\\promedioysumaconllamadademetodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E036496-0C41-4B28-B332-F3EB9A8F780D}|Desafios.csproj|solutionrelative:promedioysumaconllamadademetodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OperacionesBasicas.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Desafios\\Desafios\\OperacionesBasicas.cs",
+              "RelativeDocumentMoniker": "OperacionesBasicas.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Desafios\\Desafios\\OperacionesBasicas.cs",
+              "RelativeToolTip": "OperacionesBasicas.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAqwCwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T21:54:43.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PromedioYSumaConLLamadaDeMetodo.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Desafios\\Desafios\\PromedioYSumaConLLamadaDeMetodo.cs",
+              "RelativeDocumentMoniker": "PromedioYSumaConLLamadaDeMetodo.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Desafios\\Desafios\\PromedioYSumaConLLamadaDeMetodo.cs",
+              "RelativeToolTip": "PromedioYSumaConLLamadaDeMetodo.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwB4AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T19:57:59.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PromedioYSumaConInstacia.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Desafios\\Desafios\\PromedioYSumaConInstacia.cs",
+              "RelativeDocumentMoniker": "PromedioYSumaConInstacia.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Desafios\\Desafios\\PromedioYSumaConInstacia.cs",
+              "RelativeToolTip": "PromedioYSumaConInstacia.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAACsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T19:36:07.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Desafios\\Desafios\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Desafios\\Desafios\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T19:27:28.553Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

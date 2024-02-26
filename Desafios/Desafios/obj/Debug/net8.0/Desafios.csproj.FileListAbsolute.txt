@@ -1,0 +1,14 @@
+C:\Users\ruben\OneDrive\Desktop\Desafios\Desafios\obj\Debug\net8.0\Desafios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ruben\OneDrive\Desktop\Desafios\Desafios\obj\Debug\net8.0\Desafios.AssemblyInfoInputs.cache
+C:\Users\ruben\OneDrive\Desktop\Desafios\Desafios\obj\Debug\net8.0\Desafios.AssemblyInfo.cs
+C:\Users\ruben\OneDrive\Desktop\Desafios\Desafios\obj\Debug\net8.0\Desafios.csproj.CoreCompileInputs.cache
+C:\Users\ruben\OneDrive\Desktop\Desafios\Desafios\bin\Debug\net8.0\Desafios.exe
+C:\Users\ruben\OneDrive\Desktop\Desafios\Desafios\bin\Debug\net8.0\Desafios.deps.json
+C:\Users\ruben\OneDrive\Desktop\Desafios\Desafios\bin\Debug\net8.0\Desafios.runtimeconfig.json
+C:\Users\ruben\OneDrive\Desktop\Desafios\Desafios\bin\Debug\net8.0\Desafios.dll
+C:\Users\ruben\OneDrive\Desktop\Desafios\Desafios\bin\Debug\net8.0\Desafios.pdb
+C:\Users\ruben\OneDrive\Desktop\Desafios\Desafios\obj\Debug\net8.0\Desafios.dll
+C:\Users\ruben\OneDrive\Desktop\Desafios\Desafios\obj\Debug\net8.0\refint\Desafios.dll
+C:\Users\ruben\OneDrive\Desktop\Desafios\Desafios\obj\Debug\net8.0\Desafios.pdb
+C:\Users\ruben\OneDrive\Desktop\Desafios\Desafios\obj\Debug\net8.0\Desafios.genruntimeconfig.cache
+C:\Users\ruben\OneDrive\Desktop\Desafios\Desafios\obj\Debug\net8.0\ref\Desafios.dll

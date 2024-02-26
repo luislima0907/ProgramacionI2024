@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ruben\\OneDrive\\Desktop\\Creacion de Clases\\",
+  "WorkspaceRootPath": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\Creacion de Clases\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ruben\\OneDrive\\Desktop\\Creacion de Clases\\CreacionDeClases\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\Creacion de Clases\\CreacionDeClases\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CreacionDeClases\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ruben\\OneDrive\\Desktop\\Creacion de Clases\\CreacionDeClases\\Coordinador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CreacionDeClases\\Coordinador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\Creacion de Clases\\CreacionDeClases\\Profesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CreacionDeClases\\Profesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\Creacion de Clases\\CreacionDeClases\\prueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CreacionDeClases\\prueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\Creacion de Clases\\CreacionDeClases\\Alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CreacionDeClases\\Alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\Creacion de Clases\\CreacionDeClases\\CreacionDeClases.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CreacionDeClases\\CreacionDeClases.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Coordinador.cs",
-              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Creacion de Clases\\CreacionDeClases\\Coordinador.cs",
-              "RelativeDocumentMoniker": "CreacionDeClases\\Coordinador.cs",
-              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Creacion de Clases\\CreacionDeClases\\Coordinador.cs",
-              "RelativeToolTip": "CreacionDeClases\\Coordinador.cs",
+              "DocumentIndex": 3,
+              "Title": "Alumno.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\Creacion de Clases\\CreacionDeClases\\Alumno.cs",
+              "RelativeDocumentMoniker": "CreacionDeClases\\Alumno.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\Creacion de Clases\\CreacionDeClases\\Alumno.cs",
+              "RelativeToolTip": "CreacionDeClases\\Alumno.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T23:25:27.849Z",
+              "WhenOpened": "2024-02-22T22:46:03.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "prueba.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\Creacion de Clases\\CreacionDeClases\\prueba.cs",
+              "RelativeDocumentMoniker": "CreacionDeClases\\prueba.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\Creacion de Clases\\CreacionDeClases\\prueba.cs",
+              "RelativeToolTip": "CreacionDeClases\\prueba.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T22:27:22.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreacionDeClases.csproj",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\Creacion de Clases\\CreacionDeClases\\CreacionDeClases.csproj",
+              "RelativeDocumentMoniker": "CreacionDeClases\\CreacionDeClases.csproj",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\Creacion de Clases\\CreacionDeClases\\CreacionDeClases.csproj",
+              "RelativeToolTip": "CreacionDeClases\\CreacionDeClases.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-02-22T22:25:25.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Profesor.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\Creacion de Clases\\CreacionDeClases\\Profesor.cs",
+              "RelativeDocumentMoniker": "CreacionDeClases\\Profesor.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\Creacion de Clases\\CreacionDeClases\\Profesor.cs",
+              "RelativeToolTip": "CreacionDeClases\\Profesor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T22:22:08.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Creacion de Clases\\CreacionDeClases\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\Creacion de Clases\\CreacionDeClases\\Program.cs",
               "RelativeDocumentMoniker": "CreacionDeClases\\Program.cs",
-              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Creacion de Clases\\CreacionDeClases\\Program.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\Creacion de Clases\\CreacionDeClases\\Program.cs",
               "RelativeToolTip": "CreacionDeClases\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAeAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-21T23:25:18.912Z",
               "EditorCaption": ""
