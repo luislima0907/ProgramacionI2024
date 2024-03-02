@@ -1,0 +1,14 @@
+C:\Users\ruben\OneDrive\Desktop\PrimerParcial\PrimerParcial\bin\Debug\net8.0\PrimerParcial.exe
+C:\Users\ruben\OneDrive\Desktop\PrimerParcial\PrimerParcial\bin\Debug\net8.0\PrimerParcial.deps.json
+C:\Users\ruben\OneDrive\Desktop\PrimerParcial\PrimerParcial\bin\Debug\net8.0\PrimerParcial.runtimeconfig.json
+C:\Users\ruben\OneDrive\Desktop\PrimerParcial\PrimerParcial\bin\Debug\net8.0\PrimerParcial.dll
+C:\Users\ruben\OneDrive\Desktop\PrimerParcial\PrimerParcial\bin\Debug\net8.0\PrimerParcial.pdb
+C:\Users\ruben\OneDrive\Desktop\PrimerParcial\PrimerParcial\obj\Debug\net8.0\PrimerParcial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ruben\OneDrive\Desktop\PrimerParcial\PrimerParcial\obj\Debug\net8.0\PrimerParcial.AssemblyInfoInputs.cache
+C:\Users\ruben\OneDrive\Desktop\PrimerParcial\PrimerParcial\obj\Debug\net8.0\PrimerParcial.AssemblyInfo.cs
+C:\Users\ruben\OneDrive\Desktop\PrimerParcial\PrimerParcial\obj\Debug\net8.0\PrimerParcial.csproj.CoreCompileInputs.cache
+C:\Users\ruben\OneDrive\Desktop\PrimerParcial\PrimerParcial\obj\Debug\net8.0\PrimerParcial.dll
+C:\Users\ruben\OneDrive\Desktop\PrimerParcial\PrimerParcial\obj\Debug\net8.0\refint\PrimerParcial.dll
+C:\Users\ruben\OneDrive\Desktop\PrimerParcial\PrimerParcial\obj\Debug\net8.0\PrimerParcial.pdb
+C:\Users\ruben\OneDrive\Desktop\PrimerParcial\PrimerParcial\obj\Debug\net8.0\PrimerParcial.genruntimeconfig.cache
+C:\Users\ruben\OneDrive\Desktop\PrimerParcial\PrimerParcial\obj\Debug\net8.0\ref\PrimerParcial.dll
