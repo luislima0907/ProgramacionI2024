@@ -1,0 +1,14 @@
+C:\Users\ruben\OneDrive\Desktop\Desafios_Semana_6\DesafiosSemana6\bin\Debug\net8.0\DesafiosSemana6.exe
+C:\Users\ruben\OneDrive\Desktop\Desafios_Semana_6\DesafiosSemana6\bin\Debug\net8.0\DesafiosSemana6.deps.json
+C:\Users\ruben\OneDrive\Desktop\Desafios_Semana_6\DesafiosSemana6\bin\Debug\net8.0\DesafiosSemana6.runtimeconfig.json
+C:\Users\ruben\OneDrive\Desktop\Desafios_Semana_6\DesafiosSemana6\bin\Debug\net8.0\DesafiosSemana6.dll
+C:\Users\ruben\OneDrive\Desktop\Desafios_Semana_6\DesafiosSemana6\bin\Debug\net8.0\DesafiosSemana6.pdb
+C:\Users\ruben\OneDrive\Desktop\Desafios_Semana_6\DesafiosSemana6\obj\Debug\net8.0\DesafiosSemana6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ruben\OneDrive\Desktop\Desafios_Semana_6\DesafiosSemana6\obj\Debug\net8.0\DesafiosSemana6.AssemblyInfoInputs.cache
+C:\Users\ruben\OneDrive\Desktop\Desafios_Semana_6\DesafiosSemana6\obj\Debug\net8.0\DesafiosSemana6.AssemblyInfo.cs
+C:\Users\ruben\OneDrive\Desktop\Desafios_Semana_6\DesafiosSemana6\obj\Debug\net8.0\DesafiosSemana6.csproj.CoreCompileInputs.cache
+C:\Users\ruben\OneDrive\Desktop\Desafios_Semana_6\DesafiosSemana6\obj\Debug\net8.0\DesafiosSemana6.dll
+C:\Users\ruben\OneDrive\Desktop\Desafios_Semana_6\DesafiosSemana6\obj\Debug\net8.0\refint\DesafiosSemana6.dll
+C:\Users\ruben\OneDrive\Desktop\Desafios_Semana_6\DesafiosSemana6\obj\Debug\net8.0\DesafiosSemana6.pdb
+C:\Users\ruben\OneDrive\Desktop\Desafios_Semana_6\DesafiosSemana6\obj\Debug\net8.0\DesafiosSemana6.genruntimeconfig.cache
+C:\Users\ruben\OneDrive\Desktop\Desafios_Semana_6\DesafiosSemana6\obj\Debug\net8.0\ref\DesafiosSemana6.dll
