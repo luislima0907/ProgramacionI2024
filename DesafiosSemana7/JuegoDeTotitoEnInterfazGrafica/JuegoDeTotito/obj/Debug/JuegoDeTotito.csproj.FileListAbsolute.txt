@@ -1,0 +1,10 @@
+C:\Users\ruben\OneDrive\Desktop\JuegoDeTotito\JuegoDeTotito\bin\Debug\JuegoDeTotito.exe.config
+C:\Users\ruben\OneDrive\Desktop\JuegoDeTotito\JuegoDeTotito\bin\Debug\JuegoDeTotito.exe
+C:\Users\ruben\OneDrive\Desktop\JuegoDeTotito\JuegoDeTotito\bin\Debug\JuegoDeTotito.pdb
+C:\Users\ruben\OneDrive\Desktop\JuegoDeTotito\JuegoDeTotito\obj\Debug\JuegoDeTotito.csproj.AssemblyReference.cache
+C:\Users\ruben\OneDrive\Desktop\JuegoDeTotito\JuegoDeTotito\obj\Debug\JuegoDeTotito.Form1.resources
+C:\Users\ruben\OneDrive\Desktop\JuegoDeTotito\JuegoDeTotito\obj\Debug\JuegoDeTotito.Properties.Resources.resources
+C:\Users\ruben\OneDrive\Desktop\JuegoDeTotito\JuegoDeTotito\obj\Debug\JuegoDeTotito.csproj.GenerateResource.cache
+C:\Users\ruben\OneDrive\Desktop\JuegoDeTotito\JuegoDeTotito\obj\Debug\JuegoDeTotito.csproj.CoreCompileInputs.cache
+C:\Users\ruben\OneDrive\Desktop\JuegoDeTotito\JuegoDeTotito\obj\Debug\JuegoDeTotito.exe
+C:\Users\ruben\OneDrive\Desktop\JuegoDeTotito\JuegoDeTotito\obj\Debug\JuegoDeTotito.pdb
