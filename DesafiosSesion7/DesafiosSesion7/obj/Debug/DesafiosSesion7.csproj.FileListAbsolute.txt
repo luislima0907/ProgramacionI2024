@@ -1,0 +1,7 @@
+C:\Users\ruben\OneDrive\Desktop\DesafiosSesion7\DesafiosSesion7\bin\Debug\DesafiosSesion7.exe.config
+C:\Users\ruben\OneDrive\Desktop\DesafiosSesion7\DesafiosSesion7\bin\Debug\DesafiosSesion7.exe
+C:\Users\ruben\OneDrive\Desktop\DesafiosSesion7\DesafiosSesion7\bin\Debug\DesafiosSesion7.pdb
+C:\Users\ruben\OneDrive\Desktop\DesafiosSesion7\DesafiosSesion7\obj\Debug\DesafiosSesion7.csproj.AssemblyReference.cache
+C:\Users\ruben\OneDrive\Desktop\DesafiosSesion7\DesafiosSesion7\obj\Debug\DesafiosSesion7.csproj.CoreCompileInputs.cache
+C:\Users\ruben\OneDrive\Desktop\DesafiosSesion7\DesafiosSesion7\obj\Debug\DesafiosSesion7.exe
+C:\Users\ruben\OneDrive\Desktop\DesafiosSesion7\DesafiosSesion7\obj\Debug\DesafiosSesion7.pdb
