@@ -1,0 +1,7 @@
+C:\Users\ruben\OneDrive\Desktop\DesafioSemana9\DesafioSemana9\bin\Debug\DesafioSemana9.exe.config
+C:\Users\ruben\OneDrive\Desktop\DesafioSemana9\DesafioSemana9\bin\Debug\DesafioSemana9.exe
+C:\Users\ruben\OneDrive\Desktop\DesafioSemana9\DesafioSemana9\bin\Debug\DesafioSemana9.pdb
+C:\Users\ruben\OneDrive\Desktop\DesafioSemana9\DesafioSemana9\obj\Debug\DesafioSemana9.csproj.AssemblyReference.cache
+C:\Users\ruben\OneDrive\Desktop\DesafioSemana9\DesafioSemana9\obj\Debug\DesafioSemana9.csproj.CoreCompileInputs.cache
+C:\Users\ruben\OneDrive\Desktop\DesafioSemana9\DesafioSemana9\obj\Debug\DesafioSemana9.exe
+C:\Users\ruben\OneDrive\Desktop\DesafioSemana9\DesafioSemana9\obj\Debug\DesafioSemana9.pdb
