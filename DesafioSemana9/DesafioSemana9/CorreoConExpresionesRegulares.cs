@@ -8,13 +8,13 @@ using System.Runtime.CompilerServices;
 
 namespace DesafioSemana9
 {
-    public class CorreoConExpresionesIrregulares
+    public class CorreoConExpresionesRegulares
     {
         // declaramos la variable donde se almacenara el correo que ingrese el usuario por consola
         public string CorreoIngresado;
 
         // creamos el constructor de la clase para poderla instanciar en el main
-        public CorreoConExpresionesIrregulares() 
+        public CorreoConExpresionesRegulares() 
         {
         }
 

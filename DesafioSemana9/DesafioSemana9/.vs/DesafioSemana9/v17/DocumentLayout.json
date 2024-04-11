@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ruben\\OneDrive\\Desktop\\DesafioSemana9\\DesafioSemana9\\",
+  "WorkspaceRootPath": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\DesafioSemana9\\DesafioSemana9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07A2AF04-32F9-4581-AEEC-E46F1157C321}|DesafioSemana9.csproj|c:\\users\\ruben\\onedrive\\desktop\\desafiosemana9\\desafiosemana9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{07A2AF04-32F9-4581-AEEC-E46F1157C321}|DesafioSemana9.csproj|c:\\users\\ruben\\onedrive\\desktop\\programaci\u00F3n-i-2024\\desafiosemana9\\desafiosemana9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07A2AF04-32F9-4581-AEEC-E46F1157C321}|DesafioSemana9.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07A2AF04-32F9-4581-AEEC-E46F1157C321}|DesafioSemana9.csproj|c:\\users\\ruben\\onedrive\\desktop\\desafiosemana9\\desafiosemana9\\correoconexpresionesirregulares.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07A2AF04-32F9-4581-AEEC-E46F1157C321}|DesafioSemana9.csproj|solutionrelative:correoconexpresionesirregulares.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07A2AF04-32F9-4581-AEEC-E46F1157C321}|DesafioSemana9.csproj|c:\\users\\ruben\\onedrive\\desktop\\programaci\u00F3n-i-2024\\desafiosemana9\\desafiosemana9\\correoconexpresionesregulares.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07A2AF04-32F9-4581-AEEC-E46F1157C321}|DesafioSemana9.csproj|solutionrelative:correoconexpresionesregulares.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,12 +23,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CorreoConExpresionesIrregulares.cs",
-              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\DesafioSemana9\\DesafioSemana9\\CorreoConExpresionesIrregulares.cs",
-              "RelativeDocumentMoniker": "CorreoConExpresionesIrregulares.cs",
-              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\DesafioSemana9\\DesafioSemana9\\CorreoConExpresionesIrregulares.cs",
-              "RelativeToolTip": "CorreoConExpresionesIrregulares.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAABUAAAA7AAAA",
+              "Title": "CorreoConExpresionesRegulares.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\DesafioSemana9\\DesafioSemana9\\CorreoConExpresionesRegulares.cs",
+              "RelativeDocumentMoniker": "CorreoConExpresionesRegulares.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\DesafioSemana9\\DesafioSemana9\\CorreoConExpresionesRegulares.cs",
+              "RelativeToolTip": "CorreoConExpresionesRegulares.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T21:47:04.983Z",
               "EditorCaption": ""
@@ -37,11 +37,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\DesafioSemana9\\DesafioSemana9\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\DesafioSemana9\\DesafioSemana9\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\DesafioSemana9\\DesafioSemana9\\Program.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\DesafioSemana9\\DesafioSemana9\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAFAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T21:46:31.418Z",
               "EditorCaption": ""
