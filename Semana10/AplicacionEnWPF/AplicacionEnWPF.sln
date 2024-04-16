@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34707.107
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AplicacionEnWPF", "AplicacionEnWPF.csproj", "{05E21624-38BC-4BAC-856E-2024AABB5E39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppDeWindows", "..\AppDeWindows\AppDeWindows.csproj", "{56649D41-ED74-488B-B42A-57C68243700E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{0565202D-0CFD-491E-8C85-7277E306A45F}"
+	ProjectSection(SolutionItems) = preProject
+		DiferenciasEntreWPFyWindowsForms.txt = DiferenciasEntreWPFyWindowsForms.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05E21624-38BC-4BAC-856E-2024AABB5E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05E21624-38BC-4BAC-856E-2024AABB5E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05E21624-38BC-4BAC-856E-2024AABB5E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05E21624-38BC-4BAC-856E-2024AABB5E39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56649D41-ED74-488B-B42A-57C68243700E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56649D41-ED74-488B-B42A-57C68243700E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56649D41-ED74-488B-B42A-57C68243700E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56649D41-ED74-488B-B42A-57C68243700E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFEC05F9-8677-4ED8-919D-E61A79DEEAF9}
+	EndGlobalSection
+EndGlobal

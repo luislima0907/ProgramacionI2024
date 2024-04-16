@@ -1,0 +1,46 @@
+Ejecucion:
+WPF
+	A la hora de ejecutar una interfaz en WPF debemos de indicarle el nombre de la ventana o pagina en un archivo
+	llamado App.xaml y buscando la propiedad StartupUri = "nombre_de_la_ventana".
+
+Windows Forms
+	Aqui la ventana del formulario se ejecutara si instanciamos la misma ventana dentro del objeto Application
+	junto con su metodo Run(new nombre_de_la_ventana). Todo esto debe hacerse en el archivo llamado Program.cs
+
+Diseño:
+WPF
+	La ventaja con wpf es que su diseño a la hora de modificar la interfaz es mucho mas moderno que el de windows forms
+	ya que, si queremos modificar las propiedades o agregar elementos a la interfaz tenemos ventanas mucho mas simples e
+	intuitivas y esto nos puede facilitar mucho a la hora construir nuestra interfaz.
+
+Windows Forms
+	Su diseño es mucho mas viejo a la hora de crear una ventana para la interfaz, junto con la ventana que contiene
+	sus propiedades y eventos, la ventaja de esto es que si modificamos solo su diseño no nos aparecera el codigo de
+	la declaracion de los elementos, propiedades, etc, asi que en este aspecto es mucho mas comodo.
+
+Implementar elementos, eventos, etc:
+WPF
+	En wpf se pueden arrastrar los elementos desde el cuadro de herramientas al igual que en windows forms, pero
+	aqui se pueden modificar y agregar cosas en tiempo real, ya que, podemos declarar los elementos en la parte de abajo
+	de la ventana del formulario y asi vamos viendo todo lo que vayamos agregando.
+
+Windows Forms
+	Puede hacer casi lo mismo que en wpf, pero con la diferencia de que el codigo del formulario se encuentra en un archivo aparte 
+	de la ventana con el diseño, esto se hace para tener mas orden ya que cada cosa esta en un lugar diferente y no nos podria estorbar
+	o dificultar la visibilidad de algo en nuestra interfaz.
+
+Nombre de los elementos:
+WPF
+	Un ejemplo de esto es el elemento de la grilla, que se puede interpretar como una tabla de filas y columnas.
+
+Windows Forms
+	Aqui en vez de una grilla tenemos algo llamado TableLayoutPanel, pero ambos cumplen la misma funcion, que es almacenar
+	y declarar filas y columnas
+
+Utilidad:
+WPF:
+	Este esta mas dedicado a interfaces que puedan tener entornos web ya que usa las etiquetas de <xml> para declarar los elementos,
+	esto es algo parecido a lo que hace HTML para las paginas web, pero aqui ya seria aplicado a interfaces graficas y no solo paginas web.
+
+Windows Forms:
+	Esta mas dedicado a aplicaciones de escritorio que se puedan ejecutar en el mismo windows y otros sistemas operativos que puedan ser combatibles.

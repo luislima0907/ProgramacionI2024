@@ -1,0 +1,12 @@
+C:\Users\ruben\OneDrive\Desktop\Semana10\AppDeWindows\bin\Debug\AppDeWindows.exe.config
+C:\Users\ruben\OneDrive\Desktop\Semana10\AppDeWindows\bin\Debug\AppDeWindows.exe
+C:\Users\ruben\OneDrive\Desktop\Semana10\AppDeWindows\bin\Debug\AppDeWindows.pdb
+C:\Users\ruben\OneDrive\Desktop\Semana10\AppDeWindows\obj\Debug\AppDeWindows.csproj.AssemblyReference.cache
+C:\Users\ruben\OneDrive\Desktop\Semana10\AppDeWindows\obj\Debug\AppDeWindows.Properties.Resources.resources
+C:\Users\ruben\OneDrive\Desktop\Semana10\AppDeWindows\obj\Debug\AppDeWindows.csproj.GenerateResource.cache
+C:\Users\ruben\OneDrive\Desktop\Semana10\AppDeWindows\obj\Debug\AppDeWindows.csproj.CoreCompileInputs.cache
+C:\Users\ruben\OneDrive\Desktop\Semana10\AppDeWindows\obj\Debug\AppDeWindows.exe
+C:\Users\ruben\OneDrive\Desktop\Semana10\AppDeWindows\obj\Debug\AppDeWindows.pdb
+C:\Users\ruben\OneDrive\Desktop\Semana10\AppDeWindows\obj\Debug\AppDeWindows.GridWindow.resources
+C:\Users\ruben\OneDrive\Desktop\Semana10\AppDeWindows\obj\Debug\AppDeWindows.MainWindow.resources
+C:\Users\ruben\OneDrive\Desktop\Semana10\AppDeWindows\obj\Debug\AppDeWindows.BindingWindow.resources
