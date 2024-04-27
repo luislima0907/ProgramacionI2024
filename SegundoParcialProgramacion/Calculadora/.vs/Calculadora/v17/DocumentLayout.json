@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ruben\\OneDrive\\Desktop\\SegundoParcialProgramacion\\Calculadora\\",
+  "WorkspaceRootPath": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\SegundoParcialProgramacion\\Calculadora\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95C3E125-D6A6-4E13-B5C4-6FCB423EB806}|Calculadora.csproj|c:\\users\\ruben\\onedrive\\desktop\\segundoparcialprogramacion\\calculadora\\calculadorawpf.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95C3E125-D6A6-4E13-B5C4-6FCB423EB806}|Calculadora.csproj|solutionrelative:calculadorawpf.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95C3E125-D6A6-4E13-B5C4-6FCB423EB806}|Calculadora.csproj|C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\SegundoParcialProgramacion\\Calculadora\\calculadoracientifica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95C3E125-D6A6-4E13-B5C4-6FCB423EB806}|Calculadora.csproj|solutionrelative:calculadoracientifica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95C3E125-D6A6-4E13-B5C4-6FCB423EB806}|Calculadora.csproj|c:\\users\\ruben\\onedrive\\desktop\\segundoparcialprogramacion\\calculadora\\calculadorawpf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{95C3E125-D6A6-4E13-B5C4-6FCB423EB806}|Calculadora.csproj|solutionrelative:calculadorawpf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95C3E125-D6A6-4E13-B5C4-6FCB423EB806}|Calculadora.csproj|c:\\users\\ruben\\onedrive\\desktop\\segundoparcialprogramacion\\calculadora\\calculadoranormal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95C3E125-D6A6-4E13-B5C4-6FCB423EB806}|Calculadora.csproj|C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\SegundoParcialProgramacion\\Calculadora\\calculadoranormal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95C3E125-D6A6-4E13-B5C4-6FCB423EB806}|Calculadora.csproj|solutionrelative:calculadoranormal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95C3E125-D6A6-4E13-B5C4-6FCB423EB806}|Calculadora.csproj|c:\\users\\ruben\\onedrive\\desktop\\segundoparcialprogramacion\\calculadora\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{95C3E125-D6A6-4E13-B5C4-6FCB423EB806}|Calculadora.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{95C3E125-D6A6-4E13-B5C4-6FCB423EB806}|Calculadora.csproj|C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\SegundoParcialProgramacion\\Calculadora\\calculadorawpf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{95C3E125-D6A6-4E13-B5C4-6FCB423EB806}|Calculadora.csproj|solutionrelative:calculadorawpf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95C3E125-D6A6-4E13-B5C4-6FCB423EB806}|Calculadora.csproj|c:\\users\\ruben\\onedrive\\desktop\\programaci\u00F3n-i-2024\\segundoparcialprogramacion\\calculadora\\calculadorawpf.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95C3E125-D6A6-4E13-B5C4-6FCB423EB806}|Calculadora.csproj|solutionrelative:calculadorawpf.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,53 +26,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 311,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\SegundoParcialProgramacion\\Calculadora\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\SegundoParcialProgramacion\\Calculadora\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-27T16:29:14.538Z",
+              "DocumentIndex": 0,
+              "Title": "CalculadoraCientifica.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\SegundoParcialProgramacion\\Calculadora\\CalculadoraCientifica.cs",
+              "RelativeDocumentMoniker": "CalculadoraCientifica.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\SegundoParcialProgramacion\\Calculadora\\CalculadoraCientifica.cs",
+              "RelativeToolTip": "CalculadoraCientifica.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T17:12:27.532Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CalculadoraNormal.cs",
-              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\SegundoParcialProgramacion\\Calculadora\\CalculadoraNormal.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\SegundoParcialProgramacion\\Calculadora\\CalculadoraNormal.cs",
               "RelativeDocumentMoniker": "CalculadoraNormal.cs",
-              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\SegundoParcialProgramacion\\Calculadora\\CalculadoraNormal.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\SegundoParcialProgramacion\\Calculadora\\CalculadoraNormal.cs",
               "RelativeToolTip": "CalculadoraNormal.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAmwAQAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T16:15:59.928Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "CalculadoraWPF.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\SegundoParcialProgramacion\\Calculadora\\CalculadoraWPF.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\SegundoParcialProgramacion\\Calculadora\\CalculadoraWPF.xaml.cs",
               "RelativeDocumentMoniker": "CalculadoraWPF.xaml.cs",
-              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\SegundoParcialProgramacion\\Calculadora\\CalculadoraWPF.xaml.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\SegundoParcialProgramacion\\Calculadora\\CalculadoraWPF.xaml.cs",
               "RelativeToolTip": "CalculadoraWPF.xaml.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABQAAAAwAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwB8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T16:13:23.416Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CalculadoraWPF.xaml",
-              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\SegundoParcialProgramacion\\Calculadora\\CalculadoraWPF.xaml",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\SegundoParcialProgramacion\\Calculadora\\CalculadoraWPF.xaml",
               "RelativeDocumentMoniker": "CalculadoraWPF.xaml",
-              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\SegundoParcialProgramacion\\Calculadora\\CalculadoraWPF.xaml",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\SegundoParcialProgramacion\\Calculadora\\CalculadoraWPF.xaml",
               "RelativeToolTip": "CalculadoraWPF.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-04-27T16:10:19.601Z",

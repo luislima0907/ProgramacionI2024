@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\ruben\OneDrive\Desktop\Programación-I-2024\SegundoParcialProgramacion\Calculadora\obj\Debug\
+C:\Users\ruben\OneDrive\Desktop\Programación-I-2024\SegundoParcialProgramacion\Calculadora\obj\Release\
 Calculadora
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\ruben\OneDrive\Desktop\Programación-I-2024\SegundoParcialProgramacion\Calculadora\App.xaml
 1-935691104
 
@@ -16,5 +16,5 @@ C:\Users\ruben\OneDrive\Desktop\Programación-I-2024\SegundoParcialProgramacion\
 13-38814620
 CalculadoraWPF.xaml;
 
-False
+True
 

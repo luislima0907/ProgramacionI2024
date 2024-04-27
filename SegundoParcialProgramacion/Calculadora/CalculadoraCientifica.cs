@@ -6,34 +6,30 @@ using System.Threading.Tasks;
 
 namespace Calculadora
 {
-    internal class CalculadoraCientifica : CalculadoraNormal
+    public class CalculadoraCientifica : CalculadoraNormal
     {
-        public CalculadoraCientifica()
+        public int num;
+        public int baseNum;
+        public int exponente;
+        public static double Seno(double num) 
         {
-
+            return Math.Sin(num);
         }
-        public void CalcularRaiz(int exponenteDeRaiz, int numeroRaiz)
+        public static double Coseno(double num) 
         {
-
+           return Math.Cos(num);
         }
-        public void CalcularPotencia(int numeroBase, int numeroExponente)
+        public static double Tangente(double num) 
         {
-
+            return Math.Tan(num);
         }
-
-        public void CalcularSeno(int angulo)
+        public static double Potencia(double baseNum, double exponente) 
         {
-
+            return Math.Pow(baseNum, exponente);
         }
-
-        public void CalcularCoseno(int angulo)
+        public static double RaizCuadrada(double num)
         {
-
-        }
-
-        public void CalcularTangente(int angulo)
-        {
-
+            return Math.Sqrt(num);
         }
     }
 }

@@ -6,35 +6,23 @@ using System.Threading.Tasks;
 
 namespace Calculadora
 {
-    internal class CalculadoraNormal
+    public class CalculadoraNormal
     {
-        public int numUno;
-        public int numDos;
-        public int resultado;
-
-        public CalculadoraNormal() 
+        public int num1;
+        public int num2;
+        public static double Sumar(double num1, double num2) 
         {
-
+            return num1 + num2;
         }
-
-        public void CalcularSuma(int primerNumero, int segundoNumero)
-        {
-             
+        public static double Restar(double num1, double num2) {
+            return num1 - num2;
         }
-
-        public void CalcularResta(int primerNumero, int SegundoNumero)
-        {
-
+        public static double Multiplicar(double num1, double num2) {
+            return num1 * num2;
         }
-
-        public void CalcularMultiplicacion(int primerNumero, int segundoNumero) 
+        public static double Dividir(double num1, double num2)
         {
-
-        }
-
-        public void CalcularDivision(int primerNumero, int segundoNumero)
-        {
-
+            return num1 / num2;
         }
     }
 }
