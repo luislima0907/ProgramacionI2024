@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Calculadora
 {
@@ -29,6 +30,11 @@ namespace Calculadora
         }
         public static double RaizCuadrada(double num)
         {
+            // hacemos esta validacion para que la raiz cuadrada no sea un numero negativo
+            if (num < 0) 
+            {
+                MessageBox.Show("No puedes sacar una raiz cuadrada de un numero negativo");
+            }
             return Math.Sqrt(num);
         }
     }
