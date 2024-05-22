@@ -1,0 +1,42 @@
+﻿<Window x:Class="MiPrimerCRUD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MiPrimerCRUD"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="635" Width="946">
+    <Grid>
+        <Label Content="Clientes" HorizontalAlignment="Left" Margin="86,41,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <ListBox Name="ListaDeClientes" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="47,96,624,392"/>
+        <Label Content="Productos:" HorizontalAlignment="Left" Margin="383,43,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <ListBox x:Name="ListaDeProductos" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="348,96,319,392"/>
+        <Label Content="Ventas" HorizontalAlignment="Left" Margin="750,52,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <ListBox x:Name="ListaDeVentas" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="660,101,28,392"/>
+        <Button Content="Borrar Venta" HorizontalAlignment="Left" Margin="808,246,0,0" VerticalAlignment="Top" Height="42" Width="110" Click="Button_Click"/>
+        <Button Name="BtnInsertarCliente" Content="Insertar" HorizontalAlignment="Left" Margin="112,481,0,0" VerticalAlignment="Top" Height="42" Width="87" Click="BtnInsertarCliente_Click"/>
+        <Button Name="BtnBorrarCliente" Content="Borrar" HorizontalAlignment="Left" Margin="156,251,0,0" VerticalAlignment="Top" Height="42" Width="86" Click="BtnBorrarCliente_Click"/>
+        <TextBox Name="TxtInsertarCliente" HorizontalAlignment="Left" Margin="105,361,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Name="BtnActualizarCliente" Content="Actualizar" HorizontalAlignment="Left" Margin="59,251,0,0" VerticalAlignment="Top" Height="42" Width="86" Click="BtnActualizarCliente_Click"/>
+        <Label Content="Inserta un cliente:" HorizontalAlignment="Left" Margin="89,311,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="36,356,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox Name="TxtInsertarDireccionCliente" HorizontalAlignment="Left" Margin="106,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Direccion:" HorizontalAlignment="Left" Margin="37,385,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox Name="TxtInsertarPoblacionCliente" HorizontalAlignment="Left" Margin="106,419,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Poblacion:" HorizontalAlignment="Left" Margin="37,414,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox Name="TxtInsertarTelefonoCliente" HorizontalAlignment="Left" Margin="105,448,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Telefono:" HorizontalAlignment="Left" Margin="36,443,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button Name="BtnInsertarProducto" Content="Insertar" HorizontalAlignment="Left" Margin="441,489,0,0" VerticalAlignment="Top" Height="42" Width="86" Click="BtnInsertarProducto_Click"/>
+        <Button Name="BtnBorrarProducto" Content="Borrar" HorizontalAlignment="Left" Margin="484,251,0,0" VerticalAlignment="Top" Height="42" Width="86" Click="BtnBorrarProducto_Click"/>
+        <Button Name="BtnActualizarProducto" Content="Actualizar" HorizontalAlignment="Left" Margin="386,251,0,0" VerticalAlignment="Top" Height="42" Width="86" Click="BtnActualizarProducto_Click"/>
+        <Label Content="Inserta un producto:" HorizontalAlignment="Left" Margin="416,311,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Seccion:" HorizontalAlignment="Left" Margin="364,356,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox Name="TxtInsertarSeccionProducto" HorizontalAlignment="Left" Margin="432,361,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="364,385,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox Name="TxtInsertarProducto" HorizontalAlignment="Left" Margin="434,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Precio:" HorizontalAlignment="Left" Margin="364,414,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox Name="TxtInsertarPrecioProducto" HorizontalAlignment="Left" Margin="434,419,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Origen:" HorizontalAlignment="Left" Margin="365,447,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox Name="TxtInsertarOrigenProducto" HorizontalAlignment="Left" Margin="433,452,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>

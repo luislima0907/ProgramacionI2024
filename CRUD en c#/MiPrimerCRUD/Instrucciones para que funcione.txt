@@ -1,0 +1,42 @@
+﻿1. Crear una base de datos con el nombre GestionDePedidos dentro de visual studio
+
+2. Conectamos la base de datos a nuestro proyecto.
+
+3. Crear las siguientes tablas y columnas:
+	Articulo
+		Id int primary key identity,
+		Seccion nvarchar(50) null,
+		NombreDelArticulo nvarchar(50) not null,
+		Precio nvarchar(50) not null,
+		Fecha datetime default getdate(),
+		PaisDeOrigen nvarchar(50)
+	Cliente
+		Id int primary key identity,
+		Nombre nvarchar(50) not null,
+		Direccion nvarchar(50) not null,
+		Poblacion nvarchar(50) not null,
+		Telefono nvarchar(50) not null,
+	Venta
+		Id primary key identity,
+		CodigoDelCliente int not null,
+		FechaDelPedido datetime default getdate(),
+		FormaDePago nvarchar(50) not null,
+		Monto int,
+		PRIMARY KEY CLUSTERED ([Id] ASC),
+        CONSTRAINT [FK_Venta_ToTable] FOREIGN KEY ([CodigoDelCliente]) REFERENCES [dbo].[Cliente] ([Id])
+
+3. Antes de ejecutar la interfaz, nos vamos a origen de datos y le damos click derecho al nombre de nuestra base de datos
+y despues le damos a la opcion que diga "Configurar origen de datos con el asistente" y seleccionamos todas nuestras tablas y columnas.
+
+3. Ejecutar la interfaz y agregar clientes y productos
+
+4. Para agregar las ventas, las agregamos dentro del visual studio:
+	4.1 primero nos vamos a explorador de servidores y buscamos nuestra base de datos
+	4.2 buscamos la tabla venta y le damos click derecho y luego le damos a la opcion que diga "Mostrar datos de tabla"
+	4.3 procedemos a agregar los datos de la venta, el codigo del cliente se autocompletara gracias a la llave foranea.
+
+ACLARACIONES:
+Para insertar productos o clientes debemos de seleccionar al cliente o producto y darle al boton de actualizar que se encuentra debajo de cada listbox
+y eso nos abrira una ventana nueva donde nos aparecera la informacion del cliente o producto para poder editarla y actualizarla.
+
+Para borrar producto o cliente es parecido a insertar, solo seleccionamos al cliente, producto o venta y le damos al boton de borrar
