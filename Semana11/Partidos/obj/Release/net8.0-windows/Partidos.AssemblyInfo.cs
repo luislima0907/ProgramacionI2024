@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Partidos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6611efb895c099d8cfb72a5560bc0a6af7ea71e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Partidos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Partidos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

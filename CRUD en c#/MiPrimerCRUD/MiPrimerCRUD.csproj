@@ -159,6 +159,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="ActualizarCategoria.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ActualizarClientes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -167,15 +171,25 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ActualizarProveedores.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="ActualizarCategoria.xaml.cs">
+      <DependentUpon>ActualizarCategoria.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ActualizarClientes.xaml.cs">
       <DependentUpon>ActualizarClientes.xaml</DependentUpon>
     </Compile>
     <Compile Include="ActualizarProducto.xaml.cs">
       <DependentUpon>ActualizarProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarProveedores.xaml.cs">
+      <DependentUpon>ActualizarProveedores.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -190,8 +204,43 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ManejoDeCategoriaDeLosProductos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ManejoDeClientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ManejoDeLasVentas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ManejoDeProductos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ManejoDeProveedores.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManejoDeCategoriaDeLosProductos.xaml.cs">
+      <DependentUpon>ManejoDeCategoriaDeLosProductos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManejoDeClientes.xaml.cs">
+      <DependentUpon>ManejoDeClientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManejoDeLasVentas.xaml.cs">
+      <DependentUpon>ManejoDeLasVentas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManejoDeProductos.xaml.cs">
+      <DependentUpon>ManejoDeProductos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManejoDeProveedores.xaml.cs">
+      <DependentUpon>ManejoDeProveedores.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

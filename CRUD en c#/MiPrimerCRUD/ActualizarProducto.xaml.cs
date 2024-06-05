@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -40,6 +41,37 @@ namespace MiPrimerCRUD
             // instanciamos la conexion a nuestra base de datos, con el constructor
             // del parametro con la cadena de conexion
             miConexionSql = new SqlConnection(miConexion);
+
+            try
+            {
+                // creamos una consulta para nuestra base de datos
+                string consulta = "SELECT Nombre FROM Proveedor";
+
+                // con esto le decimos a la base de datos que ejecute la consulta que construimos en una string
+                // y que lo ejecute en la conexion hacia nuestra base de datos
+                SqlDataAdapter miAdaptadorSql = new SqlDataAdapter(consulta, miConexionSql);
+
+                // Creamos un DataTable para almacenar los resultados de la consulta
+                DataTable dtProveedores = new DataTable();
+
+                using (miAdaptadorSql)
+                {
+                    // Llenamos el DataTable con los resultados de la consulta
+                    miAdaptadorSql.Fill(dtProveedores);
+
+                    // Recorremos cada fila del DataTable
+                    foreach (DataRow row in dtProveedores.Rows)
+                    {
+                        // Agregamos el nombre de la categoría al ComboBox
+                        cboProveedores.Items.Add(row["Nombre"].ToString());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
         }
 
         private void BtnActualizarProducto_Click(object sender, RoutedEventArgs e)
@@ -47,7 +79,7 @@ namespace MiPrimerCRUD
             try
             {
                 // creamos una consulta parametrica para hacer posible la actualizacion de un registro
-                string consulta = $"UPDATE Articulo SET Seccion = @Seccion, NombreDelArticulo = @NombreDelArticulo, Precio = @Precio, PaisDeOrigen = @PaisDeOrigen WHERE Id = {IdDelProductoDesdeOtraVentana}";
+                string consulta = $"UPDATE Articulo SET Seccion = @Seccion, NombreDelArticulo = @NombreDelArticulo, Precio = @Precio, PaisDeOrigen = @PaisDeOrigen, Proveedor = @Proveedor, Cantidad = @Cantidad WHERE Id = {IdDelProductoDesdeOtraVentana}";
                 SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
                 miConexionSql.Open();
                 miComandoSql.Parameters.AddWithValue("@Seccion", TxtActualizaSeccionProducto.Text);
@@ -55,6 +87,8 @@ namespace MiPrimerCRUD
                 miComandoSql.Parameters.AddWithValue("@Precio", TxtActualizaPrecioProducto.Text);
                 //miComandoSql.Parameters.AddWithValue("@Fecha", TxtActualizaFechaProducto.Text);
                 miComandoSql.Parameters.AddWithValue("@PaisDeOrigen", TxtActualizaOrigenProducto.Text);
+                miComandoSql.Parameters.AddWithValue("@Proveedor", cboProveedores.SelectedValue);
+                miComandoSql.Parameters.AddWithValue("@Cantidad", TxtActualizaCantidadProducto.Text);
                 miComandoSql.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -70,6 +104,8 @@ namespace MiPrimerCRUD
                 TxtActualizaPrecioProducto.Text = "";
                 //TxtActualizaFechaProducto.Text = "";
                 TxtActualizaOrigenProducto.Text = "";
+                cboProveedores.SelectedValue = null;
+                TxtActualizaCantidadProducto.Text = "";
                 // this hace referencia a los objetos de una clase
                 this.Close();
             }

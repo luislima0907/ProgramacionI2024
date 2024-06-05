@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ruben\OneDrive\Desktop\CRUD en c#\MiPrimerCRUD\obj\Debug\
+C:\Users\ruben\OneDrive\Desktop\Programación-I-2024\CRUD en c#\MiPrimerCRUD\obj\Debug\
 MiPrimerCRUD
 none
 false
 DEBUG;TRACE
-C:\Users\ruben\OneDrive\Desktop\CRUD en c#\MiPrimerCRUD\App.xaml
-3441778080
+C:\Users\ruben\OneDrive\Desktop\Programación-I-2024\CRUD en c#\MiPrimerCRUD\App.xaml
+10-1274444736
 
-8-397039899
-54260881646
-ActualizarClientes.xaml;ActualizarProducto.xaml;MainWindow.xaml;
+15-584203059
+54-1020886425
+ActualizarCategoria.xaml;ActualizarClientes.xaml;ActualizarProducto.xaml;ActualizarProveedores.xaml;MainWindow.xaml;ManejoDeCategoriaDeLosProductos.xaml;ManejoDeClientes.xaml;ManejoDeLasVentas.xaml;ManejoDeProductos.xaml;ManejoDeProveedores.xaml;
 
 False
 

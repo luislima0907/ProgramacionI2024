@@ -1,4 +1,17 @@
-﻿1. Crear una base de datos con el nombre GestionDePedidos dentro de visual studio
+﻿COSAS QUE HAY QUE AGREGAR PARA PRACTICAR
+
+PRODUCTO: COMBO BOX para las categorias o secciones de los productos, campo de texto para el stock, campo de texto para el proveedor,
+hacer validacion que el stock no puede ser menor que 0, hacer un combo box para el nombre de los proveedores
+
+PROVEEDOR: Agregar un formulario de proveedores para seleccionarlos por medio de un combo box en la tabla de productos.
+
+VENTAS: Agregar la cantidad del producto a vender y multiplicarlo por el precio del producto para sacar el monto total, relacionar el nombre del producto por medio de un inner join, relacionar el id y nombre del cliente por medio del inner join
+agregar un combo box de la forma de pago si es posible. Actualizar las ventas
+
+COSAS EXTRA: Al finalizar el programa hacemos un manejo de archivos de excel o de texto para los reportes de nuestras entidades
+
+
+1. Crear una base de datos con el nombre GestionDePedidos dentro de visual studio
 
 2. Conectamos la base de datos a nuestro proyecto.
 

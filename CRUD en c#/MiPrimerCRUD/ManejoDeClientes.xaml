@@ -1,0 +1,29 @@
+﻿<Window x:Class="MiPrimerCRUD.ManejoDeClientes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MiPrimerCRUD"
+        mc:Ignorable="d"
+        Title="ManejoDeClientes" Height="450" Width="800">
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Clientes:" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <ListBox x:Name="ListaDeClientes" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="59,54,46,249"/>
+        <Button x:Name="BtnInsertarCliente" Content="Insertar" HorizontalAlignment="Left" Margin="480,324,0,0" VerticalAlignment="Top" Height="42" Width="88" Click="BtnInsertarCliente_Click"/>
+        <Button x:Name="BtnBorrarCliente" Content="Borrar" HorizontalAlignment="Left" Margin="165,220,0,0" VerticalAlignment="Top" Height="42" Width="86" Click="BtnBorrarCliente_Click"/>
+        <TextBox x:Name="TxtInsertarCliente" HorizontalAlignment="Left" Margin="131,319,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtnActualizarCliente" Content="Actualizar" HorizontalAlignment="Left" Margin="59,220,0,0" VerticalAlignment="Top" Height="42" Width="86" Click="BtnActualizarCliente_Click"/>
+        <Label Content="Agrega un cliente:" HorizontalAlignment="Left" Margin="181,278,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="62,314,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="TxtInsertarDireccionCliente" HorizontalAlignment="Left" Margin="327,319,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Direccion:" HorizontalAlignment="Left" Margin="258,314,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="TxtInsertarPoblacionCliente" HorizontalAlignment="Left" Margin="327,355,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Poblacion:" HorizontalAlignment="Left" Margin="258,350,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="TxtInsertarTelefonoCliente" HorizontalAlignment="Left" Margin="131,355,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Telefono:" HorizontalAlignment="Left" Margin="62,350,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button Name="BtnAyuda" Content="¿Necesitas Ayuda?" HorizontalAlignment="Left" Margin="630,220,0,0" VerticalAlignment="Top" Height="42" Width="124" Click="BtnInsertarCliente_Click"/>
+        <Button Name="BtnRegresarAlInicio" Content="Regresar al Inicio" HorizontalAlignment="Left" Margin="630,322,0,0" VerticalAlignment="Top" Height="42" Width="124" Click="BtnRegresarAlInicio_Click"/>
+        <Button x:Name="BtnGenerarReporteEnTexto" Content="Generar Reporte" HorizontalAlignment="Left" Margin="496,220,0,0" VerticalAlignment="Top" Height="42" Width="108" Click="BtnGenerarReporteEnTexto_Click"/>
+
+    </Grid>
+</Window>
