@@ -1,0 +1,63 @@
+﻿1. CREAMOS LA BASE DE DATOS DESDE EL VISUAL Y LA CONECTAMOS POR MEDIO DEL EXPLORADOR
+DE SERVIDORES Y ORIGENES DE DATOS
+
+2. CREAMOS LAS TABLAS:
+
+CREATE TABLE [dbo].[Alumno] (
+    [Id]                    INT            IDENTITY (1, 1) NOT NULL,
+    [Nombre]                NVARCHAR (50)  NOT NULL,
+    [Carnet]                NVARCHAR (30)  NOT NULL,
+    [Direccion]             NVARCHAR (60)  NULL,
+    [Telefono]              NVARCHAR (30)  NULL,
+    [Carrera]               NVARCHAR (100) NOT NULL,
+    [NombreDelPrimerCurso]  NVARCHAR (60)  NOT NULL,
+    [NombreDelSegundoCurso] NVARCHAR (60)  NOT NULL,
+    [NombreDelTercerCurso]  NVARCHAR (60)  NOT NULL,
+    [Establecimiento]       NVARCHAR (100) NOT NULL,
+    [Sede]                  NVARCHAR (50)  NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[Carrera] (
+    [Id]              INT            IDENTITY (1, 1) NOT NULL,
+    [Nombre]          NVARCHAR (100) NOT NULL,
+    [Establecimiento] NVARCHAR (100) NOT NULL,
+    [Sede]            NVARCHAR (50)  NULL,
+    [PrimerCurso]     NVARCHAR (60)  NOT NULL,
+    [SegundoCurso]    NVARCHAR (60)  NOT NULL,
+    [TercerCurso]     NVARCHAR (60)  NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[Establecimiento] (
+    [Id]     INT            IDENTITY (1, 1) NOT NULL,
+    [Nombre] NVARCHAR (100) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[Nota] (
+    [Id]                 INT            IDENTITY (1, 1) NOT NULL,
+    [IdAlumno]           INT            NOT NULL,
+    [CarnetDelAlumno]    NVARCHAR (30)  NOT NULL,
+    [NombreDelAlumno]    NVARCHAR (50)  NOT NULL,
+    [NombreDeLaCarrera]  NVARCHAR (100) NOT NULL,
+    [NombrePrimerCurso]  NVARCHAR (60)  NOT NULL,
+    [NotaPrimerCurso]    INT            NOT NULL,
+    [NombreSegundoCurso] NVARCHAR (60)  NOT NULL,
+    [NotaSegundoCurso]   INT            NOT NULL,
+    [NombreTercerCurso]  NVARCHAR (60)  NOT NULL,
+    [NotaTercerCurso]    INT            NOT NULL,
+    [SumaDeLasNotas]     INT            NOT NULL,
+    [PromedioDeLasNotas] INT            NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_CarnetAlumno_Nota] FOREIGN KEY ([IdAlumno]) REFERENCES [dbo].[Alumno] ([Id])
+);
+
+CREATE TABLE [dbo].[Sede] (
+    [Id]        INT           IDENTITY (1, 1) NOT NULL,
+    [Ubicacion] NVARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+PROBAMOS EL PROGRAMA Y CREAMOS LOS RESPECTIVOS METODOS QUE PIDA AL MOMENTO DE EJECUTARLO
+POR SI OCASIONA ERRORES

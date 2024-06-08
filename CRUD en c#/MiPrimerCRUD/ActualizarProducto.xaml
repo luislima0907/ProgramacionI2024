@@ -8,19 +8,20 @@
         Title="ActualizarProducto" Height="450" Width="800">
     <Grid>
         <Label Content="Seccion:" HorizontalAlignment="Left" Margin="169,73,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox Name="TxtActualizaSeccionProducto" HorizontalAlignment="Left" Margin="278,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
+        <TextBox Name="TxtActualizaSeccionProducto" HorizontalAlignment="Left" Margin="259,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
         <Button Name="BtnActualizarProducto" Content="Actualizar" HorizontalAlignment="Left" Margin="494,144,0,0" VerticalAlignment="Top" Height="34" Width="86" Click="BtnActualizarProducto_Click"/>
-        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="169,119,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox Name="TxtActualizaProducto" HorizontalAlignment="Left" Margin="278,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
-        <Label Content="Precio:" HorizontalAlignment="Left" Margin="169,178,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox Name="TxtActualizaPrecioProducto" HorizontalAlignment="Left" Margin="278,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="162,115,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox Name="TxtActualizaProducto" HorizontalAlignment="Left" Margin="259,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
+        <Label Content="Precio:" HorizontalAlignment="Left" Margin="183,159,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox Name="TxtActualizaPrecioProducto" HorizontalAlignment="Left" Margin="259,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
         <Label Content="Información del Producto:" HorizontalAlignment="Left" Margin="278,29,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <Label Content="Origen:" HorizontalAlignment="Left" Margin="169,234,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox Name="TxtActualizaOrigenProducto" HorizontalAlignment="Left" Margin="278,245,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
-        <Label Content="Proveedor:" HorizontalAlignment="Left" Margin="169,290,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <Label Content="Cantidad:" HorizontalAlignment="Left" Margin="169,346,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox x:Name="TxtActualizaCantidadProducto" HorizontalAlignment="Left" Margin="278,357,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
-        <ComboBox x:Name="cboProveedores" HorizontalAlignment="Left" Margin="294,303,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Origen:" HorizontalAlignment="Left" Margin="177,200,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox Name="TxtActualizaOrigenProducto" HorizontalAlignment="Left" Margin="259,206,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
+        <Label Content="Proveedor:" HorizontalAlignment="Left" Margin="143,244,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label Content="Cantidad:" HorizontalAlignment="Left" Margin="155,283,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox x:Name="TxtActualizaCantidadProducto" HorizontalAlignment="Left" Margin="259,289,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
+        <ComboBox x:Name="cboProveedores" HorizontalAlignment="Left" Margin="259,253,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtnRegresaAVentanaProducto" Content="Regresar a menu productos" HorizontalAlignment="Left" Margin="494,195,0,0" VerticalAlignment="Top" Height="34" Width="162" Click="BtnRegresaAVentanaProducto_Click"/>
 
     </Grid>
 </Window>

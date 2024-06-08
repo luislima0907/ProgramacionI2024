@@ -1,0 +1,16 @@
+﻿<Window x:Class="CrudDeEscuela.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrudDeEscuela"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="BtnAlumnos" Content="Alumnos" HorizontalAlignment="Left" Margin="209,186,0,0" VerticalAlignment="Top" Height="42" Width="88" Click="BtnAlumnos_Click"/>
+        <Button x:Name="BtnCarreras" Content="Carreras" HorizontalAlignment="Left" Margin="493,186,0,0" VerticalAlignment="Top" Height="42" Width="88" Click="BtnCarreras_Click"/>
+        <Button x:Name="BtnNotas" Content="Notas" HorizontalAlignment="Left" Margin="351,186,0,0" VerticalAlignment="Top" Height="42" Width="88" Click="BtnNotas_Click"/>
+        <Label Content="Bienvenido a mi Programa de Escuela" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Arial Black"/>
+        <Button x:Name="BtnUsuarios" Content="Usuarios" HorizontalAlignment="Left" Margin="351,258,0,0" VerticalAlignment="Top" Height="42" Width="88" Click="BtnUsuarios_Click"/>
+    </Grid>
+</Window>

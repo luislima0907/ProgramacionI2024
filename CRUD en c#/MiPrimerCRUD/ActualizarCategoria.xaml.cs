@@ -43,27 +43,36 @@ namespace MiPrimerCRUD
 
         private void BtnActualizarCategoria_Click(object sender, RoutedEventArgs e)
         {
-            try
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("¿Quieres actualizar la informacion de la categoria?", "Mensaje", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == System.Windows.MessageBoxResult.Yes)
             {
-                // creamos una consulta parametrica para hacer posible la actualizacion de un registro
-                string consulta = $"UPDATE Categoria SET Nombre = @Nombre WHERE Id = {IdDeLaCategoriaDesdeOtraVentana}";
-                SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
-                miConexionSql.Open();
-                miComandoSql.Parameters.AddWithValue("@Nombre", TxtActualizaCategoria.Text);
-                miComandoSql.ExecuteNonQuery();
+                try
+                {
+                    // creamos una consulta parametrica para hacer posible la actualizacion de un registro
+                    string consulta = $"UPDATE Categoria SET Nombre = @Nombre WHERE Id = {IdDeLaCategoriaDesdeOtraVentana}";
+                    SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
+                    miConexionSql.Open();
+                    miComandoSql.Parameters.AddWithValue("@Nombre", TxtActualizaCategoria.Text);
+                    miComandoSql.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    miConexionSql.Close();
+                    MessageBox.Show($"Has actualizado la categoria con exito");
+                    TxtActualizaCategoria.Text = "";
+                    // this hace referencia a los objetos de una clase
+                    this.Close();
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-            finally
-            {
-                miConexionSql.Close();
-                MessageBox.Show($"Has actualizado la categoria con exito");
-                TxtActualizaCategoria.Text = "";
-                // this hace referencia a los objetos de una clase
-                this.Close();
-            }
+        }
+
+        private void BtnRegresaAVentanaCategorias_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

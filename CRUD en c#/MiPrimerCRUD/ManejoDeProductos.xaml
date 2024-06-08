@@ -10,29 +10,29 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label Content="Productos:" HorizontalAlignment="Left" Margin="348,11,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <ListBox x:Name="ListaDeProductos" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="55,55,46,248"/>
-        <Button x:Name="BtnInsertarProducto" Content="Agregar" HorizontalAlignment="Left" Margin="478,355,0,0" VerticalAlignment="Top" Height="42" Width="86" Click="BtnInsertarProducto_Click"/>
+        <Label Content="Productos:" HorizontalAlignment="Left" Margin="348,1,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <ListBox x:Name="ListaDeProductos" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="55,39,46,264"/>
+        <Button x:Name="BtnInsertarProducto" Content="Agregar" HorizontalAlignment="Left" Margin="450,318,0,0" VerticalAlignment="Top" Height="42" Width="86" Click="BtnInsertarProducto_Click"/>
         <Button x:Name="BtnBorrarProducto" Content="Borrar" HorizontalAlignment="Left" Margin="155,0,0,0" VerticalAlignment="Center" Height="42" Width="86" Click="BtnBorrarProducto_Click"/>
         <Button x:Name="BtnActualizarProducto" Content="Actualizar" HorizontalAlignment="Left" Margin="57,0,0,0" VerticalAlignment="Center" Height="42" Width="86" Click="BtnActualizarProducto_Click"/>
-        <Label Content="Agrega un Producto:" HorizontalAlignment="Left" Margin="140,278,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Label Content="Categoria:" HorizontalAlignment="Left" Margin="50,309,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="260,309,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <TextBox x:Name="TxtInsertarProducto" HorizontalAlignment="Left" Margin="330,314,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Precio:" HorizontalAlignment="Left" Margin="50,348,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <TextBox x:Name="TxtInsertarPrecioProducto" HorizontalAlignment="Left" Margin="120,354,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TxtInsertarPrecioProducto_TextChanged"/>
-        <Label Content="Origen:" HorizontalAlignment="Left" Margin="262,348,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <TextBox x:Name="TxtInsertarOrigenProducto" HorizontalAlignment="Left" Margin="330,353,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button Name="BtnAyuda" Content="¿Necesitas Ayuda?" HorizontalAlignment="Left" Margin="646,206,0,0" VerticalAlignment="Top" Height="42" Width="108" Click="BtnAyuda_Click"/>
-        <Button x:Name="BtnRegresarAlInicio" Content="Regresar al Inicio" HorizontalAlignment="Left" Margin="630,274,0,0" VerticalAlignment="Top" Height="42" Width="124" Click="BtnRegresarAlInicio_Click"/>
-        <Label Content="Cantidad:" HorizontalAlignment="Left" Margin="52,385,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <TextBox x:Name="TxtInsertarCantidadProducto" HorizontalAlignment="Left" Margin="120,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TxtInsertarCantidadProducto_TextChanged"/>
-        <Label Content="Proveedor:" HorizontalAlignment="Left" Margin="262,385,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Button x:Name="BtnIrACategoria" Content="Ir a Categorias" HorizontalAlignment="Left" Margin="521,201,0,0" VerticalAlignment="Top" Height="42" Width="108" Click="BtnIrACategoria_Click"/>
-        <ComboBox x:Name="cboCategorias" HorizontalAlignment="Left" Margin="121,314,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="BtnIrAProveedores" Content="Ir a Proveedores" HorizontalAlignment="Left" Margin="401,201,0,0" VerticalAlignment="Top" Height="42" Width="108" Click="BtnIrAProveedores_Click"/>
-        <ComboBox x:Name="cboProveedores" HorizontalAlignment="Left" Margin="344,390,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="BtnGenerarReporteEnTexto" Content="Generar Reporte" HorizontalAlignment="Left" Margin="630,353,0,0" VerticalAlignment="Top" Height="42" Width="108" Click="BtnGenerarReporteEnTexto_Click"/>
+        <Label Content="Agrega un Producto:" HorizontalAlignment="Left" Margin="116,253,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Categoria:" HorizontalAlignment="Left" Margin="23,284,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="236,284,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="TxtInsertarProducto" HorizontalAlignment="Left" Margin="300,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Precio:" HorizontalAlignment="Left" Margin="44,323,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="TxtInsertarPrecioProducto" HorizontalAlignment="Left" Margin="97,329,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TxtInsertarPrecioProducto_TextChanged"/>
+        <Label Content="Origen:" HorizontalAlignment="Left" Margin="245,323,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="TxtInsertarOrigenProducto" HorizontalAlignment="Left" Margin="301,330,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Name="BtnAyuda" Content="¿Necesitas Ayuda?" HorizontalAlignment="Left" Margin="646,0,0,0" VerticalAlignment="Center" Height="42" Width="108" Click="BtnAyuda_Click"/>
+        <Button x:Name="BtnRegresarAlInicio" Content="Regresar al Inicio" HorizontalAlignment="Left" Margin="630,349,0,0" VerticalAlignment="Top" Height="42" Width="124" Click="BtnRegresarAlInicio_Click"/>
+        <Label Content="Cantidad:" HorizontalAlignment="Left" Margin="28,360,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="TxtInsertarCantidadProducto" HorizontalAlignment="Left" Margin="97,366,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TxtInsertarCantidadProducto_TextChanged"/>
+        <Label Content="Proveedor:" HorizontalAlignment="Left" Margin="224,360,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="BtnIrACategoria" Content="Ir a Categorias" HorizontalAlignment="Left" Margin="521,0,0,0" VerticalAlignment="Center" Height="42" Width="108" Click="BtnIrACategoria_Click"/>
+        <ComboBox x:Name="cboCategorias" HorizontalAlignment="Left" Margin="97,289,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtnIrAProveedores" Content="Ir a Proveedores" HorizontalAlignment="Left" Margin="401,0,0,0" VerticalAlignment="Center" Height="42" Width="108" Click="BtnIrAProveedores_Click"/>
+        <ComboBox x:Name="cboProveedores" HorizontalAlignment="Left" Margin="302,364,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtnGenerarReporteEnTexto" Content="Generar Reporte" HorizontalAlignment="Left" Margin="262,0,0,0" VerticalAlignment="Center" Height="42" Width="108" Click="BtnGenerarReporteEnTexto_Click"/>
 
     </Grid>
 </Window>

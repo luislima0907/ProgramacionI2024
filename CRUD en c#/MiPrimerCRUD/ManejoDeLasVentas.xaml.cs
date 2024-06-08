@@ -136,7 +136,7 @@ namespace MiPrimerCRUD
             {
                 // creamos una consulta calculada con concat para nuestra base de datos
                 // concat nos sirve para concatenar la informacion de las columnas en una fila
-                string consulta = "SELECT *, CONCAT('Id del Cliente: ', CodigoDelCliente, '   Fecha: ', FechaDelPedido, '   Forma de pago: ', FormaDePago, '   Nombre del producto: ', NombreDelProducto, '   Cantidad del Producto: ', CantidadDelProducto, '   Precio del Producto: ', PrecioDelProducto, '   Monto de Pago: ', Monto, '   SubTotal: ', SubTotal, '   Monto de Cambio: ', MontoDeCambio) AS InformacionCompletaDeLaVenta FROM Venta";
+                string consulta = "SELECT *, CONCAT('Id del Cliente: ', CodigoDelCliente, '   Nombre del Cliente: ', NombreDelCliente, '   Fecha: ', FechaDelPedido, '   Forma de pago: ', FormaDePago, '   Nombre del producto: ', NombreDelProducto, '   Cantidad del Producto: ', CantidadDelProducto, '   Precio del Producto: ', PrecioDelProducto, '   Monto de Pago: ', Monto, '   SubTotal: ', SubTotal, '   Monto de Cambio: ', MontoDeCambio) AS InformacionCompletaDeLaVenta FROM Venta";
 
                 // con esto le decimos a la base de datos que ejecute la consulta que construimos en una string
                 // y que lo ejecute en la conexion hacia nuestra base de datos
@@ -165,24 +165,28 @@ namespace MiPrimerCRUD
 
         private void BtnBorrarVenta_Click(object sender, RoutedEventArgs e)
         {
-            try
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("¿Quieres borrar la venta seleccionada?", "Mensaje", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == System.Windows.MessageBoxResult.Yes)
             {
-                // creamos una consulta parametrica para hacer posible la eliminacion de un registro
-                string consulta = "DELETE FROM Venta WHERE Id=@IdVenta";
-                SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
-                miConexionSql.Open();
-                miComandoSql.Parameters.AddWithValue("IdVenta", ListaDeVentas.SelectedValue);
-                miComandoSql.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-            finally
-            {
-                miConexionSql.Close();
-                muestraDeVentas();
-                MessageBox.Show($"Has borrado la venta con exito");
+                try
+                {
+                    // creamos una consulta parametrica para hacer posible la eliminacion de un registro
+                    string consulta = "DELETE FROM Venta WHERE Id=@IdVenta";
+                    SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
+                    miConexionSql.Open();
+                    miComandoSql.Parameters.AddWithValue("IdVenta", ListaDeVentas.SelectedValue);
+                    miComandoSql.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    miConexionSql.Close();
+                    muestraDeVentas();
+                    MessageBox.Show($"Has borrado la venta con exito");
+                }
             }
         }
 
@@ -198,17 +202,17 @@ namespace MiPrimerCRUD
             try
             {
                 // creamos una consulta parametrica para insertar un registro
-                string consulta = "INSERT INTO VENTA(CodigoDelCliente,FormaDePago,NombreDelProducto,Monto,CantidadDelProducto,SubTotal,PrecioDelProducto,MontoDeCambio) VALUES(@CodigoDelCliente,@FormaDePago,@NombreDelProducto,@Monto,@CantidadDelProducto,@SubTotal,@PrecioDelProducto,@MontoDeCambio)";
+                string consulta = "INSERT INTO VENTA(CodigoDelCliente,NombreDelCliente,FormaDePago,NombreDelProducto,CantidadDelProducto,PrecioDelProducto,Monto,SubTotal,MontoDeCambio) VALUES(@CodigoDelCliente,@NombreDelCliente,@FormaDePago,@NombreDelProducto,@CantidadDelProducto,@PrecioDelProducto,@Monto,@SubTotal,@MontoDeCambio)";
                 SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
                 miConexionSql.Open();
                 miComandoSql.Parameters.AddWithValue("CodigoDelCliente", cboIdCliente.SelectedValue);
+                miComandoSql.Parameters.AddWithValue("NombreDelCliente", txtNombreDelCliente.Text);
                 miComandoSql.Parameters.AddWithValue("FormaDePago", cboFormaDePago.SelectedValue);
                 miComandoSql.Parameters.AddWithValue("NombreDelProducto", cboProducto.SelectedValue);
-                //miComandoSql.Parameters.AddWithValue("Fecha", TxtInsertarFechaProducto.Text);
-                miComandoSql.Parameters.AddWithValue("Monto", txtMontoPago.Text);
                 miComandoSql.Parameters.AddWithValue("CantidadDelProducto", txtCantidadDelProducto.Text);
-                miComandoSql.Parameters.AddWithValue("SubTotal", txtSubTotal.Text);
                 miComandoSql.Parameters.AddWithValue("PrecioDelProducto", txtPrecioDelProducto.Text);
+                miComandoSql.Parameters.AddWithValue("Monto", txtMontoPago.Text);
+                miComandoSql.Parameters.AddWithValue("SubTotal", txtSubTotal.Text);
                 miComandoSql.Parameters.AddWithValue("MontoDeCambio", txtMontoCambio.Text);
                 miComandoSql.ExecuteNonQuery();
             }
@@ -222,6 +226,7 @@ namespace MiPrimerCRUD
                 muestraDeVentas();
                 MessageBox.Show($"Has insertado una venta con exito");
                 cboProducto.SelectedValue = null;
+                txtNombreDelCliente.Text = "";
                 cboIdCliente.SelectedValue = null;
                 cboFormaDePago.SelectedValue = null;
                 txtMontoPago.Text = "";
@@ -479,7 +484,7 @@ namespace MiPrimerCRUD
 
                 try
                 {
-                    string consulta = $"SELECT * FROM Venta WHERE CONCAT('Id del Cliente: ', CodigoDelCliente,  '   Fecha de la venta: ', FechaDelPedido, '   Forma de Pago: ', FormaDePago, '   Nombre del producto: ', NombreDelProducto, '   Cantidad del producto: ', CantidadDelProducto, '   Precio del producto: ', PrecioDelProducto, '   Monto de pago: ', Monto, '   SubTotal: ', SubTotal, '   Monto de Cambio: ', MontoDeCambio) = '{informacionCompletaDeLaVentaSeleccionada}'";
+                    string consulta = $"SELECT * FROM Venta WHERE CONCAT('Id del Cliente: ', CodigoDelCliente, '   Nombre del Cliente: ', NombreDelCliente,  '   Fecha de la venta: ', FechaDelPedido, '   Forma de Pago: ', FormaDePago, '   Nombre del producto: ', NombreDelProducto, '   Cantidad del producto: ', CantidadDelProducto, '   Precio del producto: ', PrecioDelProducto, '   Monto de pago: ', Monto, '   SubTotal: ', SubTotal, '   Monto de Cambio: ', MontoDeCambio) = '{informacionCompletaDeLaVentaSeleccionada}'";
 
                     SqlDataAdapter miAdaptadorSql = new SqlDataAdapter(consulta, miConexionSql);
                     DataTable dtVenta = new DataTable();
@@ -501,7 +506,7 @@ namespace MiPrimerCRUD
             {
                 try
                 {
-                    string consulta = "SELECT *, CONCAT('Id del Cliente: ', CodigoDelCliente,  '   Fecha de la venta: ', FechaDelPedido, '   Forma de Pago: ', FormaDePago, '   Nombre del producto: ', NombreDelProducto, '   Cantidad del producto: ', CantidadDelProducto, '   Precio del producto: ', PrecioDelProducto, '   Monto de pago: ', Monto, '   SubTotal: ', SubTotal, '   Monto de Cambio: ', MontoDeCambio) AS InformacionCompletaDeLaVenta FROM Venta";
+                    string consulta = "SELECT *, CONCAT('Id del Cliente: ', CodigoDelCliente, '   Nombre del Cliente: ', NombreDelCliente,  '   Fecha de la venta: ', FechaDelPedido, '   Forma de Pago: ', FormaDePago, '   Nombre del producto: ', NombreDelProducto, '   Cantidad del producto: ', CantidadDelProducto, '   Precio del producto: ', PrecioDelProducto, '   Monto de pago: ', Monto, '   SubTotal: ', SubTotal, '   Monto de Cambio: ', MontoDeCambio) AS InformacionCompletaDeLaVenta FROM Venta";
 
                     SqlDataAdapter miAdaptadorSql = new SqlDataAdapter(consulta, miConexionSql);
                     DataTable dtVenta = new DataTable();
@@ -523,6 +528,97 @@ namespace MiPrimerCRUD
                     MessageBox.Show(ex.ToString());
                 }
             }
+        }
+
+        private void cboIdCliente_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //Obtenemos el id del alumno seleccionado
+            string IdDelClienteSeleccionado = cboIdCliente.SelectedItem.ToString();
+
+            try
+            {
+                // Creamos una consulta para obtener los cursos de la carrera seleccionada
+                string consulta = $"SELECT Nombre FROM Cliente WHERE Id = '{IdDelClienteSeleccionado}'";
+
+                // Ejecutamos la consulta
+                SqlDataAdapter miAdaptadorSql = new SqlDataAdapter(consulta, miConexionSql);
+                DataTable dtClientes = new DataTable();
+                miAdaptadorSql.Fill(dtClientes);
+
+                // Verificamos que la consulta haya devuelto al menos un resultado
+                if (dtClientes.Rows.Count > 0)
+                {
+                    // Asignamos los nombres de los cursos a los campos de texto
+                    txtNombreDelCliente.Text = dtClientes.Rows[0]["Nombre"].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void BtnActualizarVenta_Click(object sender, RoutedEventArgs e)
+        {
+            ActualizarVentas ventanaActualizar = new ActualizarVentas((int)ListaDeVentas.SelectedValue);
+
+            try
+            {
+                string consulta = "SELECT CodigoDelCliente,NombreDelCliente,FormaDePago,NombreDelProducto,CantidadDelProducto,PrecioDelProducto,Monto,SubTotal,MontoDeCambio FROM Venta WHERE Id = @IdVenta";
+
+                SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
+
+                // con esto le decimos a la base de datos que ejecute la consulta que construimos en una string
+                // y que lo ejecute en la conexion hacia nuestra base de datos
+                SqlDataAdapter miAdaptadorSql = new SqlDataAdapter(miComandoSql);
+
+                using (miAdaptadorSql)
+                {
+                    miComandoSql.Parameters.AddWithValue("IdVenta", ListaDeVentas.SelectedValue);
+                    DataTable tablaDeVentas = new DataTable();
+                    miAdaptadorSql.Fill(tablaDeVentas);
+
+                    // decimos cual informacion de alguna columna en nuestras tablas queremos ver en el listbox que creamos
+                    ventanaActualizar.cboIdCliente.SelectedValue = tablaDeVentas.Rows[0]["CodigoDelCliente"].ToString();
+                    ventanaActualizar.txtNombreDelCliente.Text = tablaDeVentas.Rows[0]["NombreDelCliente"].ToString();
+                    ventanaActualizar.cboFormaDePago.SelectedValue = tablaDeVentas.Rows[0]["FormaDePago"].ToString();
+                    ventanaActualizar.cboProducto.SelectedValue = tablaDeVentas.Rows[0]["NombreDelProducto"].ToString();
+                    ventanaActualizar.txtCantidadDelProducto.Text = tablaDeVentas.Rows[0]["CantidadDelProducto"].ToString();
+                    ventanaActualizar.txtMontoPago.Text = tablaDeVentas.Rows[0]["Monto"].ToString();
+                    ventanaActualizar.txtSubTotal.Text = tablaDeVentas.Rows[0]["SubTotal"].ToString();
+                    ventanaActualizar.txtMontoCambio.Text = tablaDeVentas.Rows[0]["MontoDeCambio"].ToString();
+
+                    // seleccionamos el elemento de la tabla segun su id
+                    ListaDeVentas.SelectedValuePath = "Id";
+
+                    // Especificamos de donde viene la informacion para llenarla en el listbox
+                    ListaDeVentas.ItemsSource = tablaDeVentas.DefaultView;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            // ShowDialog lo que nos permite es de que pone la ventana en la que estemos en primer plano a nivel de programa
+            // es decir, nos servira al momento de tener dos ventanas abiertas del mismo programa y no queramos que el usuario
+            // salga de ahi hasta que la cierre o termine la tarea que se le solicita
+            ventanaActualizar.ShowDialog();
+            muestraDeVentas();
+        }
+
+        private void BtnAyuda_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Estas son las funciones de esta ventana:\n\n1. Agregar: Tienes que llenar todos los campos de texto que te aparecen, aunque algunos no los podras editar porque primero tienes que seleccionar un id de algun cliente," +
+                " y con esto ya conseguiras el nombre del cliente, luego tienes que elegir un producto y te aparecera el precio del producto que seleccionaste, despues tienes que ingresar la cantidad que quieres del producto" +
+                " y una vez la tengas, presionas la tecla enter para que te de el total que tiene que pagar el cliente por esa venta, despues tienes que ingresar el monto de pago del cliente por esa venta, y le da enter para que le de el monto de cambio" +
+                " en caso de que lo hubiera, una hayas hecho eso ya puedes darle al boton de agregar venta y te aparecera en la listbox." +
+                    "\n\n2. Actualizar: Para actualizar una venta tienes que seleccionarla " +
+                    "en la listBox y luego darle al boton de actualizar, luego se abrira una ventana con toda la informacion de la venta seleccionada para poderla editar, cuando ya llenes toda la nueva informacion, siguiendo los mismos pasos que hiciste al momento de agregarla,  " +
+                    "tienes que darle al boton de actualizar y te saldra una ventana preguntandote si quieres actualizar la informacion de la venta, si le das al boton de 'si' se cerrara la ventana y te dirigira " +
+                    "nuevamente a la ventana de ventas donde ya tendras a la venta con la nueva informacion.\n\n3. Borrar: Para borrar una venta tienes que seleccionarla y darle al boton de Borrar, se te mostrara un mensaje " +
+                    "preguntandote si de verdad quieres eliminarla, y si le das que 'si' la venta sera borrada.\n\n4. Generar Reporte: Para generar un reporte individual tienes que seleccionar una venta y darle al boton de generar " +
+                    "reporte y automaticamente te generara un archivo de texto con la informacion de la venta seleccionada, ya si quieres reporte de todas las ventas, simplemente no selecciones a ninguna y dale al boton de generar reporte " +
+                    "y con eso ya tendrias un nuevo archivo de texto con la informacion de todas las ventas que aparezcan en la listbox.");
         }
     }
 }

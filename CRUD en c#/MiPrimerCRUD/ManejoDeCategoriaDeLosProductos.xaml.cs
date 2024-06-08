@@ -114,24 +114,28 @@ namespace MiPrimerCRUD
 
         private void BtnBorrarCategoria_Click(object sender, RoutedEventArgs e)
         {
-            try
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("¿Quieres borrar a la categoria seleccionada?", "Mensaje", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == System.Windows.MessageBoxResult.Yes)
             {
-                // creamos una consulta parametrica para hacer posible la eliminacion de un registro
-                string consulta = "DELETE FROM Categoria WHERE Id=@IdCategoria";
-                SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
-                miConexionSql.Open();
-                miComandoSql.Parameters.AddWithValue("IdCategoria", ListaDeCategorias.SelectedValue);
-                miComandoSql.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-            finally
-            {
-                miConexionSql.Close();
-                muestraDeLasCategorias();
-                MessageBox.Show($"Has borrado la categoria con exito");
+                try
+                {
+                    // creamos una consulta parametrica para hacer posible la eliminacion de un registro
+                    string consulta = "DELETE FROM Categoria WHERE Id=@IdCategoria";
+                    SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
+                    miConexionSql.Open();
+                    miComandoSql.Parameters.AddWithValue("IdCategoria", ListaDeCategorias.SelectedValue);
+                    miComandoSql.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    miConexionSql.Close();
+                    muestraDeLasCategorias();
+                    MessageBox.Show($"Has borrado la categoria con exito");
+                }
             }
         }
 

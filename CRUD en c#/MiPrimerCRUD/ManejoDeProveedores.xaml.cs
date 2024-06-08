@@ -117,24 +117,28 @@ namespace MiPrimerCRUD
 
         private void BtnBorrarProveedor_Click(object sender, RoutedEventArgs e)
         {
-            try
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("¿Quieres borrar al proveedor seleccionado?", "Mensaje", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == System.Windows.MessageBoxResult.Yes)
             {
-                // creamos una consulta parametrica para hacer posible la eliminacion de un registro
-                string consulta = "DELETE FROM Proveedor WHERE Id = @IdProveedor";
-                SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
-                miConexionSql.Open();
-                miComandoSql.Parameters.AddWithValue("IdProveedor", ListaDeProveedores.SelectedValue);
-                miComandoSql.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-            finally
-            {
-                miConexionSql.Close();
-                muestraDeLosProveedores();
-                MessageBox.Show($"Has borrado ese proveedor con exito");
+                try
+                {
+                    // creamos una consulta parametrica para hacer posible la eliminacion de un registro
+                    string consulta = "DELETE FROM Proveedor WHERE Id = @IdProveedor";
+                    SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
+                    miConexionSql.Open();
+                    miComandoSql.Parameters.AddWithValue("IdProveedor", ListaDeProveedores.SelectedValue);
+                    miComandoSql.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    miConexionSql.Close();
+                    muestraDeLosProveedores();
+                    MessageBox.Show($"Has borrado ese proveedor con exito");
+                }
             }
         }
 

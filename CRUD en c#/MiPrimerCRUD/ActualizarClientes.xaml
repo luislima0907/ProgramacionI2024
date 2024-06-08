@@ -7,16 +7,17 @@
         mc:Ignorable="d"
         Title="ActualizarClientes" Height="450" Width="800">
     <Grid>
-        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="169,73,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="180,76,0,0" VerticalAlignment="Top" FontSize="22"/>
         <TextBox Name="TxtActualizaCliente" HorizontalAlignment="Left" Margin="278,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
         <Button Name="BtnActualizarCliente" Content="Actualizar" HorizontalAlignment="Left" Margin="494,144,0,0" VerticalAlignment="Top" Height="34" Width="86" Click="BtnActualizarCliente_Click"/>
-        <Label Content="Direccion:" HorizontalAlignment="Left" Margin="169,119,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox Name="TxtActualizaDireccionCliente" HorizontalAlignment="Left" Margin="278,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
-        <Label Content="Poblacion:" HorizontalAlignment="Left" Margin="169,178,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox Name="TxtActualizaPoblacionCliente" HorizontalAlignment="Left" Margin="278,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
-        <Label Content="Telefono:" HorizontalAlignment="Left" Margin="169,230,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox Name="TxtActualizaTelefonoCliente" HorizontalAlignment="Left" Margin="278,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
+        <Label Content="Direccion:" HorizontalAlignment="Left" Margin="170,119,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox Name="TxtActualizaDireccionCliente" HorizontalAlignment="Left" Margin="279,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
+        <Label Content="Poblacion:" HorizontalAlignment="Left" Margin="167,165,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox Name="TxtActualizaPoblacionCliente" HorizontalAlignment="Left" Margin="279,172,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
+        <Label Content="Telefono:" HorizontalAlignment="Left" Margin="178,205,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox Name="TxtActualizaTelefonoCliente" HorizontalAlignment="Left" Margin="279,213,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
         <Label Content="Información del Cliente:" HorizontalAlignment="Left" Margin="278,29,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Button x:Name="BtnRegresaAVentanaClientes" Content="Regresar al menu clientes" HorizontalAlignment="Left" Margin="494,208,0,0" VerticalAlignment="Top" Height="34" Width="158" Click="BtnRegresaAVentanaClientes_Click"/>
 
     </Grid>
 </Window>

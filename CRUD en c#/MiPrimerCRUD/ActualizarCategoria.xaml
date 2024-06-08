@@ -7,12 +7,11 @@
         mc:Ignorable="d"
         Title="ActualizarCategoria" Height="450" Width="800">
     <Grid>
-        <Label Content="Seccion:" HorizontalAlignment="Left" Margin="169,73,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox x:Name="TxtActualizaSeccionProducto" HorizontalAlignment="Left" Margin="278,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
-        <Button x:Name="BtnActualizarCategoria" Content="Actualizar" HorizontalAlignment="Left" Margin="260,195,0,0" VerticalAlignment="Top" Height="34" Width="86" Click="BtnActualizarCategoria_Click"/>
-        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="169,119,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox x:Name="TxtActualizaCategoria" HorizontalAlignment="Left" Margin="278,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
+        <Button x:Name="BtnActualizarCategoria" Content="Actualizar" HorizontalAlignment="Left" Margin="436,93,0,0" VerticalAlignment="Top" Height="34" Width="86" Click="BtnActualizarCategoria_Click"/>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="184,90,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox x:Name="TxtActualizaCategoria" HorizontalAlignment="Left" Margin="278,96,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
         <Label Content="Información de la Categoria:" HorizontalAlignment="Left" Margin="278,29,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Button x:Name="BtnRegresaAVentanaCategorias" Content="Regresar el menu categorias" HorizontalAlignment="Left" Margin="263,183,0,0" VerticalAlignment="Top" Height="34" Width="168" Click="BtnRegresaAVentanaCategorias_Click"/>
 
     </Grid>
 </Window>

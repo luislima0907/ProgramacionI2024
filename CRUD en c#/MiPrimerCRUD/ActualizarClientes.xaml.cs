@@ -46,30 +46,39 @@ namespace MiPrimerCRUD
 
         private void BtnActualizarCliente_Click(object sender, RoutedEventArgs e)
         {
-            try
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("¿Quieres actualizar la informacion del cliente?", "Mensaje", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == System.Windows.MessageBoxResult.Yes)
             {
-                // creamos una consulta parametrica para hacer posible la actualizacion de un registro
-                string consulta = $"UPDATE Cliente SET Nombre = @Nombre, Direccion = @Direccion, Poblacion = @Poblacion, Telefono = @Telefono WHERE Id = {IdDelClienteDesdeOtraVentana}";// usamos el id que trajimos desde otra ventana
-                SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
-                miConexionSql.Open();
-                miComandoSql.Parameters.AddWithValue("@Nombre", TxtActualizaCliente.Text);
-                miComandoSql.Parameters.AddWithValue("@Direccion", TxtActualizaDireccionCliente.Text);
-                miComandoSql.Parameters.AddWithValue("@Poblacion", TxtActualizaPoblacionCliente.Text);
-                miComandoSql.Parameters.AddWithValue("@Telefono", TxtActualizaTelefonoCliente.Text);
-                miComandoSql.ExecuteNonQuery();
+                try
+                {
+                    // creamos una consulta parametrica para hacer posible la actualizacion de un registro
+                    string consulta = $"UPDATE Cliente SET Nombre = @Nombre, Direccion = @Direccion, Poblacion = @Poblacion, Telefono = @Telefono WHERE Id = {IdDelClienteDesdeOtraVentana}";// usamos el id que trajimos desde otra ventana
+                    SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
+                    miConexionSql.Open();
+                    miComandoSql.Parameters.AddWithValue("@Nombre", TxtActualizaCliente.Text);
+                    miComandoSql.Parameters.AddWithValue("@Direccion", TxtActualizaDireccionCliente.Text);
+                    miComandoSql.Parameters.AddWithValue("@Poblacion", TxtActualizaPoblacionCliente.Text);
+                    miComandoSql.Parameters.AddWithValue("@Telefono", TxtActualizaTelefonoCliente.Text);
+                    miComandoSql.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    miConexionSql.Close();
+                    MessageBox.Show($"Has actualizado al cliente con exito");
+                    TxtActualizaCliente.Text = "";
+                    // this hace referencia a los objetos de una clase
+                    this.Close();
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-            finally
-            {
-                miConexionSql.Close();
-                MessageBox.Show($"Has actualizado al cliente con exito");
-                TxtActualizaCliente.Text = "";
-                // this hace referencia a los objetos de una clase
-                this.Close();
-            }
+        }
+
+        private void BtnRegresaAVentanaClientes_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

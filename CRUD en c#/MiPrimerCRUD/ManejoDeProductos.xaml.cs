@@ -185,24 +185,28 @@ namespace MiPrimerCRUD
 
         private void BtnBorrarProducto_Click(object sender, RoutedEventArgs e)
         {
-            try
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("¿Quieres borrar el producto seleccionado?", "Mensaje", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == System.Windows.MessageBoxResult.Yes)
             {
-                // creamos una consulta parametrica para hacer posible la eliminacion de un registro
-                string consulta = "DELETE FROM Articulo WHERE Id = @IdProducto";
-                SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
-                miConexionSql.Open();
-                miComandoSql.Parameters.AddWithValue("IdProducto", ListaDeProductos.SelectedValue);
-                miComandoSql.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-            finally
-            {
-                miConexionSql.Close();
-                muestraDeLosProductos();
-                MessageBox.Show($"Has borrado el producto con exito");
+                try
+                {
+                    // creamos una consulta parametrica para hacer posible la eliminacion de un registro
+                    string consulta = "DELETE FROM Articulo WHERE Id = @IdProducto";
+                    SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
+                    miConexionSql.Open();
+                    miComandoSql.Parameters.AddWithValue("IdProducto", ListaDeProductos.SelectedValue);
+                    miComandoSql.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    miConexionSql.Close();
+                    muestraDeLosProductos();
+                    MessageBox.Show($"Has borrado el producto con exito");
+                }
             }
         }
 
@@ -343,7 +347,15 @@ namespace MiPrimerCRUD
 
         private void BtnAyuda_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Estas son las funciones de esta ventana:\n\n1. Agregar: Tienes que llenar todos los campos de texto que te aparecen junto con los valores que elijas en los comboBox, luego le das click al boton de agregar y con eso ya se registraria el producto en la listbox" +
+                    "\n\n2. Actualizar: Para actualizar un un producto tienes que seleccionarlo " +
+                    "en la listBox y luego darle al boton de actualizar, luego se abrira una ventana con toda la informacion del producto seleccionado para poderla editar, cuando ya llenes toda la nueva informacion " +
+                    "del producto, tienes que darle al boton de actualizar y te saldra una ventana preguntandote si quieres actualizar la informacion del producto, si le das al boton de 'si' se cerrara la ventana y te dirigira " +
+                    "nuevamente a la ventana de productos donde ya tendras al producto con la nueva informacion.\n\n3. Borrar: Para borrar un producto tienes que seleccionarlo y darle al boton de Borrar, se te mostrara un mensaje " +
+                    "preguntandote si de verdad quieres eliminarlo, y si le das que 'si' el producto sera borrado.\n\n4. Generar Reporte: Para generar un reporte individual tienes que seleccionar a un producto y darle al boton de generar " +
+                    "reporte y automaticamente te generara un archivo de texto con la informacion del producto seleccionado, ya si quieres reporte de todos los productos, simplemente no selecciones a ninguno y dale al boton de generar reporte " +
+                    "y con eso ya tendrias un nuevo archivo de texto con la informacion de todos los productos que aparezcan en la listbox.\n\n5. Ir a Categorias o Proveedores: Si le das a cualquiera de esos dos botones te abrira una ventana donde puedes" +
+                    " hacer todas lsa funciones de esta ventana solo que con la informacion del boton que elijas en este caso la informacion de los proveedores o categorias.");
         }
     }
 }

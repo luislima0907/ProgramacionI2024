@@ -175,6 +175,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ActualizarVentas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -190,6 +194,9 @@
     </Compile>
     <Compile Include="ActualizarProveedores.xaml.cs">
       <DependentUpon>ActualizarProveedores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarVentas.xaml.cs">
+      <DependentUpon>ActualizarVentas.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>

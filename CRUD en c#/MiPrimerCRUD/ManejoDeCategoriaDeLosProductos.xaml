@@ -9,15 +9,14 @@
     <Grid>
         <Label Content="Categorias:" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="22"/>
         <ListBox x:Name="ListaDeCategorias" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="59,54,46,243"/>
-        <Button x:Name="BtnInsertarCategoria" Content="Insertar" HorizontalAlignment="Left" Margin="480,302,0,0" VerticalAlignment="Top" Height="42" Width="88" Click="BtnInsertarCategoria_Click"/>
-        <Button x:Name="BtnBorrarCategoria" Content="Borrar" HorizontalAlignment="Left" Margin="165,220,0,0" VerticalAlignment="Top" Height="42" Width="86" Click="BtnBorrarCategoria_Click"/>
+        <Button x:Name="BtnInsertarCategoria" Content="Agregar" HorizontalAlignment="Left" Margin="264,323,0,0" VerticalAlignment="Top" Height="42" Width="88" Click="BtnInsertarCategoria_Click"/>
+        <Button x:Name="BtnBorrarCategoria" Content="Borrar" HorizontalAlignment="Left" Margin="165,214,0,0" VerticalAlignment="Top" Height="42" Width="86" Click="BtnBorrarCategoria_Click"/>
         <TextBox x:Name="TxtInsertarCategoria" HorizontalAlignment="Left" Margin="131,319,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="BtnActualizarCategoria" Content="Actualizar" HorizontalAlignment="Left" Margin="59,220,0,0" VerticalAlignment="Top" Height="42" Width="86" Click="BtnActualizarCategoria_Click"/>
+        <Button x:Name="BtnActualizarCategoria" Content="Actualizar" HorizontalAlignment="Left" Margin="59,214,0,0" VerticalAlignment="Top" Height="42" Width="86" Click="BtnActualizarCategoria_Click"/>
         <Label Content="Agrega una categoria:" HorizontalAlignment="Left" Margin="181,278,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label Content="Nombre:" HorizontalAlignment="Left" Margin="62,314,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Button x:Name="BtnAyuda" Content="¿Necesitas Ayuda?" HorizontalAlignment="Left" Margin="630,220,0,0" VerticalAlignment="Top" Height="42" Width="124"/>
-        <Button x:Name="BtnRegresarAlInicio" Content="Regresar al menu productos" HorizontalAlignment="Left" Margin="590,302,0,0" VerticalAlignment="Top" Height="42" Width="164" Click="BtnRegresarAlInicio_Click"/>
-        <Button x:Name="BtnGenerarReporteEnTexto" Content="Generar Reporte" HorizontalAlignment="Left" Margin="496,220,0,0" VerticalAlignment="Top" Height="42" Width="108" Click="BtnGenerarReporteEnTexto_Click"/>
+        <Button x:Name="BtnRegresarAlInicio" Content="Regresar al menu productos" HorizontalAlignment="Left" Margin="590,323,0,0" VerticalAlignment="Top" Height="42" Width="164" Click="BtnRegresarAlInicio_Click"/>
+        <Button x:Name="BtnGenerarReporteEnTexto" Content="Generar Reporte" HorizontalAlignment="Left" Margin="279,215,0,0" VerticalAlignment="Top" Height="42" Width="108" Click="BtnGenerarReporteEnTexto_Click"/>
 
     </Grid>
 </Window>

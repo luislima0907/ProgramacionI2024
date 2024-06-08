@@ -1,0 +1,45 @@
+﻿<Window x:Class="CrudDeEscuela.ManejoDePromedioDeNotas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrudDeEscuela"
+        mc:Ignorable="d"
+        Title="ManejoDePromedioDeNotas" Height="450" Width="800">
+    <Grid>
+        <Label Content="Notas:" HorizontalAlignment="Left" Margin="368,1,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <ListBox x:Name="ListaDeNotas" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="39,40,23,268"/>
+        <Button x:Name="BtnBorrarNota" Content="Borrar" HorizontalAlignment="Left" Margin="40,174,0,0" VerticalAlignment="Top" Height="42" Width="110" Click="BtnBorrarNota_Click"/>
+        <Button x:Name="BtnRegresarAlInicio" Content="Regresar al Inicio" HorizontalAlignment="Left" Margin="647,361,0,0" VerticalAlignment="Top" Height="42" Width="124" Click="BtnRegresarAlInicio_Click"/>
+        <ComboBox x:Name="cboIdAlumnos" HorizontalAlignment="Left" Margin="154,270,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cboIdAlumnos_SelectionChanged"/>
+        <Label Content="Id del Alumno:" HorizontalAlignment="Left" Margin="39,265,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Agrega una Nota:" HorizontalAlignment="Left" Margin="92,221,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label Content="Primer Curso:" HorizontalAlignment="Left" Margin="47,299,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Carrera:" HorizontalAlignment="Left" Margin="560,241,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Nota Primer Curso:" HorizontalAlignment="Left" Margin="7,329,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtNotaPrimerCurso" HorizontalAlignment="Left" Margin="153,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtnInsertarNota" Content="Agregar Nota" HorizontalAlignment="Left" Margin="580,290,0,0" VerticalAlignment="Top" Height="42" Width="110" Click="BtnInsertarNota_Click"/>
+        <Button x:Name="BtnGenerarReporteEnTexto" Content="Generar Reporte" HorizontalAlignment="Left" Margin="181,174,0,0" VerticalAlignment="Top" Height="42" Width="108" Click="BtnGenerarReporteEnTexto_Click"/>
+        <TextBox x:Name="txtPrimerCursoCarrera" HorizontalAlignment="Left" Margin="153,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Label Content="Segundo Curso:" HorizontalAlignment="Left" Margin="312,299,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Nota Segundo Curso:" HorizontalAlignment="Left" Margin="274,329,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtNotaSegundoCurso" HorizontalAlignment="Left" Margin="436,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtSegundoCursoCarrera" HorizontalAlignment="Left" Margin="436,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Label Content="Tercer Curso:" HorizontalAlignment="Left" Margin="51,357,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Nota Tercer Curso:" HorizontalAlignment="Left" Margin="11,387,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtNotaTercerCurso" HorizontalAlignment="Left" Margin="153,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="txtNotaTercerCurso_KeyDown"/>
+        <TextBox x:Name="txtTercerCursoCarrera" HorizontalAlignment="Left" Margin="153,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Label Content="Promedio:" HorizontalAlignment="Left" Margin="353,386,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtPromedioDeLasNotas" HorizontalAlignment="Left" Margin="437,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Label Content="Suma:" HorizontalAlignment="Left" Margin="382,358,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtSumaDeLasNotas" HorizontalAlignment="Left" Margin="437,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Label Content="Nombre del Alumno:" HorizontalAlignment="Left" Margin="277,268,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtNombreDelAlumno" HorizontalAlignment="Left" Margin="435,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Label Content="Carnet del Alumno:" HorizontalAlignment="Left" Margin="289,240,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtCarnetDelAlumno" HorizontalAlignment="Left" Margin="435,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <TextBox x:Name="txtCarreraDelAlumno" HorizontalAlignment="Left" Margin="630,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Button x:Name="BtnAyuda" Content="¿Necesitas Ayuda?" HorizontalAlignment="Left" Margin="653,175,0,0" VerticalAlignment="Top" Height="42" Width="124" Click="BtnAyuda_Click"/>
+        <Button x:Name="BtnActualizarNota" Content="Actualizar" HorizontalAlignment="Center" Margin="0,175,0,0" VerticalAlignment="Top" Height="42" Width="124" Click="BtnActualizarNota_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,27 @@
+﻿<Window x:Class="CrudDeEscuela.ActualizarCarreras"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrudDeEscuela"
+        mc:Ignorable="d"
+        Title="ActualizarCarreras" Height="450" Width="800">
+    <Grid>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="201,73,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox x:Name="TxtActualizaCarrera" HorizontalAlignment="Left" Margin="298,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
+        <Button x:Name="BtnActualizarCarrera" Content="Actualizar" HorizontalAlignment="Left" Margin="492,217,0,0" VerticalAlignment="Top" Height="34" Width="86" Click="BtnActualizarCarrera_Click"/>
+        <Label Content="Información de la Carrera:" HorizontalAlignment="Left" Margin="278,29,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label Content="Establecimiento:" HorizontalAlignment="Left" Margin="129,116,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <ComboBox x:Name="cboActualizaEstablecimientoCarrera" HorizontalAlignment="Left" Margin="300,128,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Nombre del Primer Curso:" HorizontalAlignment="Left" Margin="35,159,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox x:Name="TxtActualizaPrimerCurso" HorizontalAlignment="Left" Margin="298,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
+        <Label Content="Nombre del Segundo Curso:" HorizontalAlignment="Left" Margin="13,203,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox x:Name="TxtActualizaSegundoCurso" HorizontalAlignment="Left" Margin="298,213,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
+        <Label Content="Nombre del Tercer Curso:" HorizontalAlignment="Left" Margin="41,247,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox x:Name="TxtActualizaTercerCurso" HorizontalAlignment="Left" Margin="298,257,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
+        <Label Content="Sede:" HorizontalAlignment="Left" Margin="235,286,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <ComboBox x:Name="cboActualizaSedeCarrera" HorizontalAlignment="Left" Margin="298,298,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtnRegresarAVentanaCarrera" Content="Regresar al menu carreras" HorizontalAlignment="Left" Margin="565,291,0,0" VerticalAlignment="Top" Height="34" Width="162" Click="BtnRegresarAVentanaCarrera_Click"/>
+
+    </Grid>
+</Window>

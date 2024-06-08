@@ -1,0 +1,23 @@
+﻿<Window x:Class="CrudDeEscuela.ManejoDeSedes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrudDeEscuela"
+        mc:Ignorable="d"
+        Title="ManejoDeSedes" Height="450" Width="800">
+    <Grid>
+        <Label Content="Sedes:" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <ListBox x:Name="ListaDeSedes" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="59,54,46,243"/>
+        <Button x:Name="BtnInsertarSede" Content="Agregar" HorizontalAlignment="Left" Margin="129,350,0,0" VerticalAlignment="Top" Height="42" Width="88" Click="BtnInsertarSede_Click"/>
+        <Button x:Name="BtnBorrarSede" Content="Borrar" HorizontalAlignment="Left" Margin="165,220,0,0" VerticalAlignment="Top" Height="42" Width="86" Click="BtnBorrarSede_Click"/>
+        <TextBox x:Name="TxtInsertarSede" HorizontalAlignment="Left" Margin="135,319,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtnActualizarSede" Content="Actualizar" HorizontalAlignment="Left" Margin="59,220,0,0" VerticalAlignment="Top" Height="42" Width="86" Click="BtnActualizarSede_Click"/>
+        <Label Content="Agrega una sede:" HorizontalAlignment="Left" Margin="107,278,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Ubicacion:" HorizontalAlignment="Left" Margin="62,314,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="BtnAyuda" Content="¿Necesitas Ayuda?" HorizontalAlignment="Left" Margin="630,220,0,0" VerticalAlignment="Top" Height="42" Width="124" Click="BtnAyuda_Click"/>
+        <Button x:Name="BtnRegresarACarreras" Content="Regresar al menu de Carreras" HorizontalAlignment="Left" Margin="574,350,0,0" VerticalAlignment="Top" Height="42" Width="180" Click="BtnRegresarACarreras_Click"/>
+        <Button x:Name="BtnGenerarReporteEnTexto" Content="Generar Reporte" HorizontalAlignment="Left" Margin="508,220,0,0" VerticalAlignment="Top" Height="42" Width="108" Click="BtnGenerarReporteEnTexto_Click"/>
+
+    </Grid>
+</Window>

@@ -1132,6 +1132,8 @@ namespace MiPrimerCRUD {
             
             private global::System.Data.DataColumn columnMontoDeCambio;
             
+            private global::System.Data.DataColumn columnNombreDelCliente;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public VentaDataTable() {
@@ -1247,6 +1249,14 @@ namespace MiPrimerCRUD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn NombreDelClienteColumn {
+                get {
+                    return this.columnNombreDelCliente;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1282,7 +1292,7 @@ namespace MiPrimerCRUD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public VentaRow AddVentaRow(ClienteRow parentClienteRowByFK_Venta_ToTable, System.DateTime FechaDelPedido, string FormaDePago, string NombreDelProducto, int Monto, int CantidadDelProducto, int SubTotal, double PrecioDelProducto, int MontoDeCambio) {
+            public VentaRow AddVentaRow(ClienteRow parentClienteRowByFK_Venta_ToTable, System.DateTime FechaDelPedido, string FormaDePago, string NombreDelProducto, int Monto, int CantidadDelProducto, int SubTotal, double PrecioDelProducto, int MontoDeCambio, string NombreDelCliente) {
                 VentaRow rowVentaRow = ((VentaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1294,7 +1304,8 @@ namespace MiPrimerCRUD {
                         CantidadDelProducto,
                         SubTotal,
                         PrecioDelProducto,
-                        MontoDeCambio};
+                        MontoDeCambio,
+                        NombreDelCliente};
                 if ((parentClienteRowByFK_Venta_ToTable != null)) {
                     columnValuesArray[1] = parentClienteRowByFK_Venta_ToTable[0];
                 }
@@ -1337,6 +1348,7 @@ namespace MiPrimerCRUD {
                 this.columnSubTotal = base.Columns["SubTotal"];
                 this.columnPrecioDelProducto = base.Columns["PrecioDelProducto"];
                 this.columnMontoDeCambio = base.Columns["MontoDeCambio"];
+                this.columnNombreDelCliente = base.Columns["NombreDelCliente"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1362,6 +1374,8 @@ namespace MiPrimerCRUD {
                 base.Columns.Add(this.columnPrecioDelProducto);
                 this.columnMontoDeCambio = new global::System.Data.DataColumn("MontoDeCambio", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMontoDeCambio);
+                this.columnNombreDelCliente = new global::System.Data.DataColumn("NombreDelCliente", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombreDelCliente);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
                 this.columnId.AutoIncrement = true;
@@ -1373,6 +1387,7 @@ namespace MiPrimerCRUD {
                 this.columnCodigoDelCliente.AllowDBNull = false;
                 this.columnFormaDePago.MaxLength = 50;
                 this.columnNombreDelProducto.MaxLength = 50;
+                this.columnNombreDelCliente.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2616,6 +2631,22 @@ namespace MiPrimerCRUD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string NombreDelCliente {
+                get {
+                    try {
+                        return ((string)(this[this.tableVenta.NombreDelClienteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NombreDelCliente\' de la tabla \'Venta\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVenta.NombreDelClienteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ClienteRow ClienteRow {
                 get {
                     return ((ClienteRow)(this.GetParentRow(this.Table.ParentRelations["FK_Venta_ToTable"])));
@@ -2719,6 +2750,18 @@ namespace MiPrimerCRUD {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetMontoDeCambioNull() {
                 this[this.tableVenta.MontoDeCambioColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsNombreDelClienteNull() {
+                return this.IsNull(this.tableVenta.NombreDelClienteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetNombreDelClienteNull() {
+                this[this.tableVenta.NombreDelClienteColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -4640,10 +4683,11 @@ SELECT Id, Nombre, Direccion, Poblacion, Telefono FROM Cliente WHERE (Id = @Id)"
             tableMapping.ColumnMappings.Add("SubTotal", "SubTotal");
             tableMapping.ColumnMappings.Add("PrecioDelProducto", "PrecioDelProducto");
             tableMapping.ColumnMappings.Add("MontoDeCambio", "MontoDeCambio");
+            tableMapping.ColumnMappings.Add("NombreDelCliente", "NombreDelCliente");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::Microsoft.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Venta] WHERE (([Id] = @Original_Id) AND ([CodigoDelCliente] = @Original_CodigoDelCliente) AND ((@IsNull_FechaDelPedido = 1 AND [FechaDelPedido] IS NULL) OR ([FechaDelPedido] = @Original_FechaDelPedido)) AND ((@IsNull_FormaDePago = 1 AND [FormaDePago] IS NULL) OR ([FormaDePago] = @Original_FormaDePago)) AND ((@IsNull_Monto = 1 AND [Monto] IS NULL) OR ([Monto] = @Original_Monto)) AND ((@IsNull_NombreDelProducto = 1 AND [NombreDelProducto] IS NULL) OR ([NombreDelProducto] = @Original_NombreDelProducto)) AND ((@IsNull_CantidadDelProducto = 1 AND [CantidadDelProducto] IS NULL) OR ([CantidadDelProducto] = @Original_CantidadDelProducto)) AND ((@IsNull_MontoDeCambio = 1 AND [MontoDeCambio] IS NULL) OR ([MontoDeCambio] = @Original_MontoDeCambio)) AND ((@IsNull_PrecioDelProducto = 1 AND [PrecioDelProducto] IS NULL) OR ([PrecioDelProducto] = @Original_PrecioDelProducto)) AND ((@IsNull_SubTotal = 1 AND [SubTotal] IS NULL) OR ([SubTotal] = @Original_SubTotal)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Venta] WHERE (([Id] = @Original_Id) AND ([CodigoDelCliente] = @Original_CodigoDelCliente) AND ((@IsNull_FechaDelPedido = 1 AND [FechaDelPedido] IS NULL) OR ([FechaDelPedido] = @Original_FechaDelPedido)) AND ((@IsNull_FormaDePago = 1 AND [FormaDePago] IS NULL) OR ([FormaDePago] = @Original_FormaDePago)) AND ((@IsNull_Monto = 1 AND [Monto] IS NULL) OR ([Monto] = @Original_Monto)) AND ((@IsNull_NombreDelProducto = 1 AND [NombreDelProducto] IS NULL) OR ([NombreDelProducto] = @Original_NombreDelProducto)) AND ((@IsNull_CantidadDelProducto = 1 AND [CantidadDelProducto] IS NULL) OR ([CantidadDelProducto] = @Original_CantidadDelProducto)) AND ((@IsNull_MontoDeCambio = 1 AND [MontoDeCambio] IS NULL) OR ([MontoDeCambio] = @Original_MontoDeCambio)) AND ((@IsNull_PrecioDelProducto = 1 AND [PrecioDelProducto] IS NULL) OR ([PrecioDelProducto] = @Original_PrecioDelProducto)) AND ((@IsNull_SubTotal = 1 AND [SubTotal] IS NULL) OR ([SubTotal] = @Original_SubTotal)) AND ((@IsNull_NombreDelCliente = 1 AND [NombreDelCliente] IS NULL) OR ([NombreDelCliente] = @Original_NombreDelCliente)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             global::Microsoft.Data.SqlClient.SqlParameter param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@Original_Id";
@@ -4705,8 +4749,8 @@ SELECT Id, Nombre, Direccion, Poblacion, Telefono FROM Cliente WHERE (Id = @Id)"
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@Original_Monto";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.SqlDbType = global::System.Data.SqlDbType.Int;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
             param.IsNullable = true;
             param.SourceColumn = "Monto";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -4755,8 +4799,8 @@ SELECT Id, Nombre, Direccion, Poblacion, Telefono FROM Cliente WHERE (Id = @Id)"
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@Original_MontoDeCambio";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.SqlDbType = global::System.Data.SqlDbType.Int;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
             param.IsNullable = true;
             param.SourceColumn = "MontoDeCambio";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -4772,8 +4816,8 @@ SELECT Id, Nombre, Direccion, Poblacion, Telefono FROM Cliente WHERE (Id = @Id)"
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@Original_PrecioDelProducto";
-            param.DbType = global::System.Data.DbType.Double;
-            param.SqlDbType = global::System.Data.SqlDbType.Float;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
             param.IsNullable = true;
             param.SourceColumn = "PrecioDelProducto";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -4789,16 +4833,32 @@ SELECT Id, Nombre, Direccion, Poblacion, Telefono FROM Cliente WHERE (Id = @Id)"
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@Original_SubTotal";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.SqlDbType = global::System.Data.SqlDbType.Int;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
             param.IsNullable = true;
             param.SourceColumn = "SubTotal";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::Microsoft.Data.SqlClient.SqlParameter();
+            param.ParameterName = "@IsNull_NombreDelCliente";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.SqlDbType = global::System.Data.SqlDbType.Int;
+            param.IsNullable = true;
+            param.SourceColumn = "NombreDelCliente";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::Microsoft.Data.SqlClient.SqlParameter();
+            param.ParameterName = "@Original_NombreDelCliente";
+            param.SqlDbType = global::System.Data.SqlDbType.NVarChar;
+            param.IsNullable = true;
+            param.SourceColumn = "NombreDelCliente";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.DeleteCommand.Parameters.Add(param);
             this._adapter.InsertCommand = new global::Microsoft.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Venta] ([CodigoDelCliente], [FechaDelPedido], [FormaDePago], [Monto], [NombreDelProducto], [CantidadDelProducto], [MontoDeCambio], [PrecioDelProducto], [SubTotal]) VALUES (@CodigoDelCliente, @FechaDelPedido, @FormaDePago, @Monto, @NombreDelProducto, @CantidadDelProducto, @MontoDeCambio, @PrecioDelProducto, @SubTotal);
-SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProducto, CantidadDelProducto, MontoDeCambio, PrecioDelProducto, SubTotal FROM Venta WHERE (Id = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Venta] ([CodigoDelCliente], [FechaDelPedido], [FormaDePago], [Monto], [NombreDelProducto], [CantidadDelProducto], [MontoDeCambio], [PrecioDelProducto], [SubTotal], [NombreDelCliente]) VALUES (@CodigoDelCliente, @FechaDelPedido, @FormaDePago, @Monto, @NombreDelProducto, @CantidadDelProducto, @MontoDeCambio, @PrecioDelProducto, @SubTotal, @NombreDelCliente);
+SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProducto, CantidadDelProducto, MontoDeCambio, PrecioDelProducto, SubTotal, NombreDelCliente FROM Venta WHERE (Id = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@CodigoDelCliente";
@@ -4822,8 +4882,8 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
             this._adapter.InsertCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@Monto";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.SqlDbType = global::System.Data.SqlDbType.Int;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
             param.IsNullable = true;
             param.SourceColumn = "Monto";
             this._adapter.InsertCommand.Parameters.Add(param);
@@ -4842,29 +4902,54 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
             this._adapter.InsertCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@MontoDeCambio";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.SqlDbType = global::System.Data.SqlDbType.Int;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
             param.IsNullable = true;
             param.SourceColumn = "MontoDeCambio";
             this._adapter.InsertCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@PrecioDelProducto";
-            param.DbType = global::System.Data.DbType.Double;
-            param.SqlDbType = global::System.Data.SqlDbType.Float;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
             param.IsNullable = true;
             param.SourceColumn = "PrecioDelProducto";
             this._adapter.InsertCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@SubTotal";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.SqlDbType = global::System.Data.SqlDbType.Int;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
             param.IsNullable = true;
             param.SourceColumn = "SubTotal";
             this._adapter.InsertCommand.Parameters.Add(param);
+            param = new global::Microsoft.Data.SqlClient.SqlParameter();
+            param.ParameterName = "@NombreDelCliente";
+            param.SqlDbType = global::System.Data.SqlDbType.NVarChar;
+            param.IsNullable = true;
+            param.SourceColumn = "NombreDelCliente";
+            this._adapter.InsertCommand.Parameters.Add(param);
             this._adapter.UpdateCommand = new global::Microsoft.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [Venta] SET [CodigoDelCliente] = @CodigoDelCliente, [FechaDelPedido] = @FechaDelPedido, [FormaDePago] = @FormaDePago, [Monto] = @Monto, [NombreDelProducto] = @NombreDelProducto, [CantidadDelProducto] = @CantidadDelProducto, [MontoDeCambio] = @MontoDeCambio, [PrecioDelProducto] = @PrecioDelProducto, [SubTotal] = @SubTotal WHERE (([Id] = @Original_Id) AND ([CodigoDelCliente] = @Original_CodigoDelCliente) AND ((@IsNull_FechaDelPedido = 1 AND [FechaDelPedido] IS NULL) OR ([FechaDelPedido] = @Original_FechaDelPedido)) AND ((@IsNull_FormaDePago = 1 AND [FormaDePago] IS NULL) OR ([FormaDePago] = @Original_FormaDePago)) AND ((@IsNull_Monto = 1 AND [Monto] IS NULL) OR ([Monto] = @Original_Monto)) AND ((@IsNull_NombreDelProducto = 1 AND [NombreDelProducto] IS NULL) OR ([NombreDelProducto] = @Original_NombreDelProducto)) AND ((@IsNull_CantidadDelProducto = 1 AND [CantidadDelProducto] IS NULL) OR ([CantidadDelProducto] = @Original_CantidadDelProducto)) AND ((@IsNull_MontoDeCambio = 1 AND [MontoDeCambio] IS NULL) OR ([MontoDeCambio] = @Original_MontoDeCambio)) AND ((@IsNull_PrecioDelProducto = 1 AND [PrecioDelProducto] IS NULL) OR ([PrecioDelProducto] = @Original_PrecioDelProducto)) AND ((@IsNull_SubTotal = 1 AND [SubTotal] IS NULL) OR ([SubTotal] = @Original_SubTotal)));
-SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProducto, CantidadDelProducto, MontoDeCambio, PrecioDelProducto, SubTotal FROM Venta WHERE (Id = @Id)";
+            this._adapter.UpdateCommand.CommandText = "UPDATE [Venta] SET [CodigoDelCliente] = @CodigoDelCliente, [FechaDelPedido] = @Fe" +
+                "chaDelPedido, [FormaDePago] = @FormaDePago, [Monto] = @Monto, [NombreDelProducto" +
+                "] = @NombreDelProducto, [CantidadDelProducto] = @CantidadDelProducto, [MontoDeCa" +
+                "mbio] = @MontoDeCambio, [PrecioDelProducto] = @PrecioDelProducto, [SubTotal] = @" +
+                "SubTotal, [NombreDelCliente] = @NombreDelCliente WHERE (([Id] = @Original_Id) AN" +
+                "D ([CodigoDelCliente] = @Original_CodigoDelCliente) AND ((@IsNull_FechaDelPedido" +
+                " = 1 AND [FechaDelPedido] IS NULL) OR ([FechaDelPedido] = @Original_FechaDelPedi" +
+                "do)) AND ((@IsNull_FormaDePago = 1 AND [FormaDePago] IS NULL) OR ([FormaDePago] " +
+                "= @Original_FormaDePago)) AND ((@IsNull_Monto = 1 AND [Monto] IS NULL) OR ([Mont" +
+                "o] = @Original_Monto)) AND ((@IsNull_NombreDelProducto = 1 AND [NombreDelProduct" +
+                "o] IS NULL) OR ([NombreDelProducto] = @Original_NombreDelProducto)) AND ((@IsNul" +
+                "l_CantidadDelProducto = 1 AND [CantidadDelProducto] IS NULL) OR ([CantidadDelPro" +
+                "ducto] = @Original_CantidadDelProducto)) AND ((@IsNull_MontoDeCambio = 1 AND [Mo" +
+                "ntoDeCambio] IS NULL) OR ([MontoDeCambio] = @Original_MontoDeCambio)) AND ((@IsN" +
+                "ull_PrecioDelProducto = 1 AND [PrecioDelProducto] IS NULL) OR ([PrecioDelProduct" +
+                "o] = @Original_PrecioDelProducto)) AND ((@IsNull_SubTotal = 1 AND [SubTotal] IS " +
+                "NULL) OR ([SubTotal] = @Original_SubTotal)) AND ((@IsNull_NombreDelCliente = 1 A" +
+                "ND [NombreDelCliente] IS NULL) OR ([NombreDelCliente] = @Original_NombreDelClien" +
+                "te)));\r\nSELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreD" +
+                "elProducto, CantidadDelProducto, MontoDeCambio, PrecioDelProducto, SubTotal, Nom" +
+                "breDelCliente FROM Venta WHERE (Id = @Id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@CodigoDelCliente";
@@ -4888,8 +4973,8 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@Monto";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.SqlDbType = global::System.Data.SqlDbType.Int;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
             param.IsNullable = true;
             param.SourceColumn = "Monto";
             this._adapter.UpdateCommand.Parameters.Add(param);
@@ -4908,24 +4993,30 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@MontoDeCambio";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.SqlDbType = global::System.Data.SqlDbType.Int;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
             param.IsNullable = true;
             param.SourceColumn = "MontoDeCambio";
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@PrecioDelProducto";
-            param.DbType = global::System.Data.DbType.Double;
-            param.SqlDbType = global::System.Data.SqlDbType.Float;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
             param.IsNullable = true;
             param.SourceColumn = "PrecioDelProducto";
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@SubTotal";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.SqlDbType = global::System.Data.SqlDbType.Int;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
             param.IsNullable = true;
             param.SourceColumn = "SubTotal";
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::Microsoft.Data.SqlClient.SqlParameter();
+            param.ParameterName = "@NombreDelCliente";
+            param.SqlDbType = global::System.Data.SqlDbType.NVarChar;
+            param.IsNullable = true;
+            param.SourceColumn = "NombreDelCliente";
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@Original_Id";
@@ -4987,8 +5078,8 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@Original_Monto";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.SqlDbType = global::System.Data.SqlDbType.Int;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
             param.IsNullable = true;
             param.SourceColumn = "Monto";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -5037,8 +5128,8 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@Original_MontoDeCambio";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.SqlDbType = global::System.Data.SqlDbType.Int;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
             param.IsNullable = true;
             param.SourceColumn = "MontoDeCambio";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -5054,8 +5145,8 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@Original_PrecioDelProducto";
-            param.DbType = global::System.Data.DbType.Double;
-            param.SqlDbType = global::System.Data.SqlDbType.Float;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
             param.IsNullable = true;
             param.SourceColumn = "PrecioDelProducto";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -5071,10 +5162,26 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@Original_SubTotal";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
+            param.IsNullable = true;
+            param.SourceColumn = "SubTotal";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::Microsoft.Data.SqlClient.SqlParameter();
+            param.ParameterName = "@IsNull_NombreDelCliente";
             param.DbType = global::System.Data.DbType.Int32;
             param.SqlDbType = global::System.Data.SqlDbType.Int;
             param.IsNullable = true;
-            param.SourceColumn = "SubTotal";
+            param.SourceColumn = "NombreDelCliente";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::Microsoft.Data.SqlClient.SqlParameter();
+            param.ParameterName = "@Original_NombreDelCliente";
+            param.SqlDbType = global::System.Data.SqlDbType.NVarChar;
+            param.IsNullable = true;
+            param.SourceColumn = "NombreDelCliente";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
@@ -5101,7 +5208,8 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
             this._commandCollection[0] = new global::Microsoft.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduct" +
-                "o, CantidadDelProducto, MontoDeCambio, PrecioDelProducto, SubTotal FROM Venta";
+                "o, CantidadDelProducto, MontoDeCambio, PrecioDelProducto, SubTotal, NombreDelCli" +
+                "ente FROM Venta";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -5162,7 +5270,7 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Id, int Original_CodigoDelCliente, global::System.Nullable<global::System.DateTime> Original_FechaDelPedido, string Original_FormaDePago, global::System.Nullable<int> Original_Monto, string Original_NombreDelProducto, global::System.Nullable<int> Original_CantidadDelProducto, global::System.Nullable<int> Original_MontoDeCambio, global::System.Nullable<double> Original_PrecioDelProducto, global::System.Nullable<int> Original_SubTotal) {
+        public virtual int Delete(int Original_Id, int Original_CodigoDelCliente, global::System.Nullable<global::System.DateTime> Original_FechaDelPedido, string Original_FormaDePago, global::System.Nullable<decimal> Original_Monto, string Original_NombreDelProducto, global::System.Nullable<int> Original_CantidadDelProducto, global::System.Nullable<decimal> Original_MontoDeCambio, global::System.Nullable<decimal> Original_PrecioDelProducto, global::System.Nullable<decimal> Original_SubTotal, string Original_NombreDelCliente) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id));
             this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_CodigoDelCliente));
             if ((Original_FechaDelPedido.HasValue == true)) {
@@ -5183,7 +5291,7 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
             }
             if ((Original_Monto.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((int)(Original_Monto.Value));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((decimal)(Original_Monto.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
@@ -5207,7 +5315,7 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
             }
             if ((Original_MontoDeCambio.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((int)(Original_MontoDeCambio.Value));
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((decimal)(Original_MontoDeCambio.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[12].Value = ((object)(1));
@@ -5215,7 +5323,7 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
             }
             if ((Original_PrecioDelProducto.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[15].Value = ((double)(Original_PrecioDelProducto.Value));
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((decimal)(Original_PrecioDelProducto.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[14].Value = ((object)(1));
@@ -5223,11 +5331,19 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
             }
             if ((Original_SubTotal.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[17].Value = ((int)(Original_SubTotal.Value));
+                this.Adapter.DeleteCommand.Parameters[17].Value = ((decimal)(Original_SubTotal.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[16].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            if ((Original_NombreDelCliente == null)) {
+                this.Adapter.DeleteCommand.Parameters[18].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[18].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[19].Value = ((string)(Original_NombreDelCliente));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -5249,7 +5365,7 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int CodigoDelCliente, global::System.Nullable<global::System.DateTime> FechaDelPedido, string FormaDePago, global::System.Nullable<int> Monto, string NombreDelProducto, global::System.Nullable<int> CantidadDelProducto, global::System.Nullable<int> MontoDeCambio, global::System.Nullable<double> PrecioDelProducto, global::System.Nullable<int> SubTotal) {
+        public virtual int Insert(int CodigoDelCliente, global::System.Nullable<global::System.DateTime> FechaDelPedido, string FormaDePago, global::System.Nullable<decimal> Monto, string NombreDelProducto, global::System.Nullable<int> CantidadDelProducto, global::System.Nullable<decimal> MontoDeCambio, global::System.Nullable<decimal> PrecioDelProducto, global::System.Nullable<decimal> SubTotal, string NombreDelCliente) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(CodigoDelCliente));
             if ((FechaDelPedido.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((System.DateTime)(FechaDelPedido.Value));
@@ -5264,7 +5380,7 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(FormaDePago));
             }
             if ((Monto.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((int)(Monto.Value));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((decimal)(Monto.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
@@ -5282,22 +5398,28 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             if ((MontoDeCambio.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((int)(MontoDeCambio.Value));
+                this.Adapter.InsertCommand.Parameters[6].Value = ((decimal)(MontoDeCambio.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             if ((PrecioDelProducto.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((double)(PrecioDelProducto.Value));
+                this.Adapter.InsertCommand.Parameters[7].Value = ((decimal)(PrecioDelProducto.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             if ((SubTotal.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((int)(SubTotal.Value));
+                this.Adapter.InsertCommand.Parameters[8].Value = ((decimal)(SubTotal.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((NombreDelCliente == null)) {
+                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(NombreDelCliente));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -5323,22 +5445,24 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
                     int CodigoDelCliente, 
                     global::System.Nullable<global::System.DateTime> FechaDelPedido, 
                     string FormaDePago, 
-                    global::System.Nullable<int> Monto, 
+                    global::System.Nullable<decimal> Monto, 
                     string NombreDelProducto, 
                     global::System.Nullable<int> CantidadDelProducto, 
-                    global::System.Nullable<int> MontoDeCambio, 
-                    global::System.Nullable<double> PrecioDelProducto, 
-                    global::System.Nullable<int> SubTotal, 
+                    global::System.Nullable<decimal> MontoDeCambio, 
+                    global::System.Nullable<decimal> PrecioDelProducto, 
+                    global::System.Nullable<decimal> SubTotal, 
+                    string NombreDelCliente, 
                     int Original_Id, 
                     int Original_CodigoDelCliente, 
                     global::System.Nullable<global::System.DateTime> Original_FechaDelPedido, 
                     string Original_FormaDePago, 
-                    global::System.Nullable<int> Original_Monto, 
+                    global::System.Nullable<decimal> Original_Monto, 
                     string Original_NombreDelProducto, 
                     global::System.Nullable<int> Original_CantidadDelProducto, 
-                    global::System.Nullable<int> Original_MontoDeCambio, 
-                    global::System.Nullable<double> Original_PrecioDelProducto, 
-                    global::System.Nullable<int> Original_SubTotal, 
+                    global::System.Nullable<decimal> Original_MontoDeCambio, 
+                    global::System.Nullable<decimal> Original_PrecioDelProducto, 
+                    global::System.Nullable<decimal> Original_SubTotal, 
+                    string Original_NombreDelCliente, 
                     int Id) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(CodigoDelCliente));
             if ((FechaDelPedido.HasValue == true)) {
@@ -5354,7 +5478,7 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
                 this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(FormaDePago));
             }
             if ((Monto.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Monto.Value));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((decimal)(Monto.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
@@ -5372,90 +5496,104 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             if ((MontoDeCambio.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(MontoDeCambio.Value));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((decimal)(MontoDeCambio.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             if ((PrecioDelProducto.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((double)(PrecioDelProducto.Value));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((decimal)(PrecioDelProducto.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             if ((SubTotal.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(SubTotal.Value));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((decimal)(SubTotal.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_Id));
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_CodigoDelCliente));
-            if ((Original_FechaDelPedido.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((System.DateTime)(Original_FechaDelPedido.Value));
+            if ((NombreDelCliente == null)) {
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(NombreDelCliente));
+            }
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_Id));
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_CodigoDelCliente));
+            if ((Original_FechaDelPedido.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((System.DateTime)(Original_FechaDelPedido.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             if ((Original_FormaDePago == null)) {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_FormaDePago));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_FormaDePago));
             }
             if ((Original_Monto.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(Original_Monto.Value));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((decimal)(Original_Monto.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
             }
             if ((Original_NombreDelProducto == null)) {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_NombreDelProducto));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_NombreDelProducto));
             }
             if ((Original_CantidadDelProducto.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((int)(Original_CantidadDelProducto.Value));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((int)(Original_CantidadDelProducto.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
             }
             if ((Original_MontoDeCambio.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((int)(Original_MontoDeCambio.Value));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((decimal)(Original_MontoDeCambio.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
             }
             if ((Original_PrecioDelProducto.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((double)(Original_PrecioDelProducto.Value));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((decimal)(Original_PrecioDelProducto.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
             }
             if ((Original_SubTotal.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((int)(Original_SubTotal.Value));
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((decimal)(Original_SubTotal.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[26].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[27].Value = ((int)(Id));
+            if ((Original_NombreDelCliente == null)) {
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[29].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_NombreDelCliente));
+            }
+            this.Adapter.UpdateCommand.Parameters[30].Value = ((int)(Id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -5480,23 +5618,25 @@ SELECT Id, CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProduc
                     int CodigoDelCliente, 
                     global::System.Nullable<global::System.DateTime> FechaDelPedido, 
                     string FormaDePago, 
-                    global::System.Nullable<int> Monto, 
+                    global::System.Nullable<decimal> Monto, 
                     string NombreDelProducto, 
                     global::System.Nullable<int> CantidadDelProducto, 
-                    global::System.Nullable<int> MontoDeCambio, 
-                    global::System.Nullable<double> PrecioDelProducto, 
-                    global::System.Nullable<int> SubTotal, 
+                    global::System.Nullable<decimal> MontoDeCambio, 
+                    global::System.Nullable<decimal> PrecioDelProducto, 
+                    global::System.Nullable<decimal> SubTotal, 
+                    string NombreDelCliente, 
                     int Original_Id, 
                     int Original_CodigoDelCliente, 
                     global::System.Nullable<global::System.DateTime> Original_FechaDelPedido, 
                     string Original_FormaDePago, 
-                    global::System.Nullable<int> Original_Monto, 
+                    global::System.Nullable<decimal> Original_Monto, 
                     string Original_NombreDelProducto, 
                     global::System.Nullable<int> Original_CantidadDelProducto, 
-                    global::System.Nullable<int> Original_MontoDeCambio, 
-                    global::System.Nullable<double> Original_PrecioDelProducto, 
-                    global::System.Nullable<int> Original_SubTotal) {
-            return this.Update(CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProducto, CantidadDelProducto, MontoDeCambio, PrecioDelProducto, SubTotal, Original_Id, Original_CodigoDelCliente, Original_FechaDelPedido, Original_FormaDePago, Original_Monto, Original_NombreDelProducto, Original_CantidadDelProducto, Original_MontoDeCambio, Original_PrecioDelProducto, Original_SubTotal, Original_Id);
+                    global::System.Nullable<decimal> Original_MontoDeCambio, 
+                    global::System.Nullable<decimal> Original_PrecioDelProducto, 
+                    global::System.Nullable<decimal> Original_SubTotal, 
+                    string Original_NombreDelCliente) {
+            return this.Update(CodigoDelCliente, FechaDelPedido, FormaDePago, Monto, NombreDelProducto, CantidadDelProducto, MontoDeCambio, PrecioDelProducto, SubTotal, NombreDelCliente, Original_Id, Original_CodigoDelCliente, Original_FechaDelPedido, Original_FormaDePago, Original_Monto, Original_NombreDelProducto, Original_CantidadDelProducto, Original_MontoDeCambio, Original_PrecioDelProducto, Original_SubTotal, Original_NombreDelCliente, Original_Id);
         }
     }
     

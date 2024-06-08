@@ -1,55 +1,59 @@
-﻿COSAS QUE HAY QUE AGREGAR PARA PRACTICAR
+﻿1. CREAR LA BASE DE DATOS DESDE EL VISUAL Y CONECTARLA EN EL EXPLORADOR DE SERVIDORES
+Y ORIGENES DE DATOS
 
-PRODUCTO: COMBO BOX para las categorias o secciones de los productos, campo de texto para el stock, campo de texto para el proveedor,
-hacer validacion que el stock no puede ser menor que 0, hacer un combo box para el nombre de los proveedores
+2. CREAR LAS TABLAS:
 
-PROVEEDOR: Agregar un formulario de proveedores para seleccionarlos por medio de un combo box en la tabla de productos.
+CREATE TABLE [dbo].[Articulo] (
+    [Id]                INT           IDENTITY (1, 1) NOT NULL,
+    [Seccion]           NVARCHAR (50) NULL,
+    [NombreDelArticulo] NVARCHAR (50) NULL,
+    [Precio]            DECIMAL (18)  NULL,
+    [Fecha]             DATETIME      DEFAULT (getdate()) NULL,
+    [PaisDeOrigen]      NVARCHAR (50) NULL,
+    [Proveedor]         NVARCHAR (50) NULL,
+    [Cantidad]          INT           NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
 
-VENTAS: Agregar la cantidad del producto a vender y multiplicarlo por el precio del producto para sacar el monto total, relacionar el nombre del producto por medio de un inner join, relacionar el id y nombre del cliente por medio del inner join
-agregar un combo box de la forma de pago si es posible. Actualizar las ventas
+CREATE TABLE [dbo].[Categoria] (
+    [Id]     INT           IDENTITY (1, 1) NOT NULL,
+    [Nombre] NVARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
 
-COSAS EXTRA: Al finalizar el programa hacemos un manejo de archivos de excel o de texto para los reportes de nuestras entidades
 
+CREATE TABLE [dbo].[Cliente] (
+    [Id]        INT           IDENTITY (1, 1) NOT NULL,
+    [Nombre]    NVARCHAR (50) NULL,
+    [Direccion] NVARCHAR (50) NULL,
+    [Poblacion] NVARCHAR (50) NULL,
+    [Telefono]  NVARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
 
-1. Crear una base de datos con el nombre GestionDePedidos dentro de visual studio
+CREATE TABLE [dbo].[Proveedor] (
+    [Id]        INT           IDENTITY (1, 1) NOT NULL,
+    [Nombre]    NVARCHAR (50) NULL,
+    [Telefono]  NVARCHAR (50) NULL,
+    [Direccion] NVARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
 
-2. Conectamos la base de datos a nuestro proyecto.
+CREATE TABLE [dbo].[Venta] (
+    [Id]                  INT           IDENTITY (1, 1) NOT NULL,
+    [CodigoDelCliente]    INT           NOT NULL,
+    [NombreDelCliente]    NVARCHAR (50) NULL,
+    [FechaDelPedido]      DATETIME      DEFAULT (getdate()) NULL,
+    [FormaDePago]         NVARCHAR (50) NULL,
+    [NombreDelProducto]   NVARCHAR (50) NULL,
+    [Monto]               DECIMAL (18)  NULL,
+    [CantidadDelProducto] INT           NULL,
+    [SubTotal]            DECIMAL (18)  NULL,
+    [PrecioDelProducto]   DECIMAL (18)  NULL,
+    [MontoDeCambio]       DECIMAL (18)  NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_Venta_ToTable] FOREIGN KEY ([CodigoDelCliente]) REFERENCES [dbo].[Cliente] ([Id])
+);
 
-3. Crear las siguientes tablas y columnas:
-	Articulo
-		Id int primary key identity,
-		Seccion nvarchar(50) null,
-		NombreDelArticulo nvarchar(50) not null,
-		Precio nvarchar(50) not null,
-		Fecha datetime default getdate(),
-		PaisDeOrigen nvarchar(50)
-	Cliente
-		Id int primary key identity,
-		Nombre nvarchar(50) not null,
-		Direccion nvarchar(50) not null,
-		Poblacion nvarchar(50) not null,
-		Telefono nvarchar(50) not null,
-	Venta
-		Id primary key identity,
-		CodigoDelCliente int not null,
-		FechaDelPedido datetime default getdate(),
-		FormaDePago nvarchar(50) not null,
-		Monto int,
-		PRIMARY KEY CLUSTERED ([Id] ASC),
-        CONSTRAINT [FK_Venta_ToTable] FOREIGN KEY ([CodigoDelCliente]) REFERENCES [dbo].[Cliente] ([Id])
-
-3. Antes de ejecutar la interfaz, nos vamos a origen de datos y le damos click derecho al nombre de nuestra base de datos
-y despues le damos a la opcion que diga "Configurar origen de datos con el asistente" y seleccionamos todas nuestras tablas y columnas.
-
-3. Ejecutar la interfaz y agregar clientes y productos
-
-4. Para agregar las ventas, las agregamos dentro del visual studio:
-	4.1 primero nos vamos a explorador de servidores y buscamos nuestra base de datos
-	4.2 buscamos la tabla venta y le damos click derecho y luego le damos a la opcion que diga "Mostrar datos de tabla"
-	4.3 procedemos a agregar los datos de la venta, el codigo del cliente se autocompletara gracias a la llave foranea.
-
-ACLARACIONES:
-Para insertar productos o clientes debemos de seleccionar al cliente o producto y darle al boton de actualizar que se encuentra debajo de cada listbox
-y eso nos abrira una ventana nueva donde nos aparecera la informacion del cliente o producto para poder editarla y actualizarla.
-
-Para borrar producto o cliente es parecido a insertar, solo seleccionamos al cliente, producto o venta y le damos al boton de borrar
+LUEGO DE ESO PROBAR EL PROGRAMA, HACIENDO LAS RESPECTIVAS MODIFICACIONES Y CREANDO
+NUEVAMENTE LOS METODOS

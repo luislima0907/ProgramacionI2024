@@ -1,0 +1,23 @@
+﻿<Window x:Class="CrudDeEscuela.ManejoDeEstablecimientos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrudDeEscuela"
+        mc:Ignorable="d"
+        Title="ManejoDeEstablecimientos" Height="450" Width="800">
+    <Grid>
+        <Label Content="Establecimientos:" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <ListBox x:Name="ListaDeEstablecimientos" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="59,54,46,243"/>
+        <Button x:Name="BtnInsertarEstablecimiento" Content="Agregar" HorizontalAlignment="Left" Margin="120,348,0,0" VerticalAlignment="Top" Height="42" Width="88" Click="BtnInsertarEstablecimiento_Click"/>
+        <Button x:Name="BtnBorrarEstablecimiento" Content="Borrar" HorizontalAlignment="Left" Margin="165,220,0,0" VerticalAlignment="Top" Height="42" Width="86" Click="BtnBorrarEstablecimiento_Click"/>
+        <TextBox x:Name="TxtInsertarEstablecimiento" HorizontalAlignment="Left" Margin="131,319,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtnActualizarEstablecimiento" Content="Actualizar" HorizontalAlignment="Left" Margin="59,220,0,0" VerticalAlignment="Top" Height="42" Width="86" Click="BtnActualizarEstablecimiento_Click"/>
+        <Label Content="Agrega un Establecimiento:" HorizontalAlignment="Left" Margin="66,278,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="62,314,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="BtnAyuda" Content="¿Necesitas Ayuda?" HorizontalAlignment="Left" Margin="630,220,0,0" VerticalAlignment="Top" Height="42" Width="124" Click="BtnAyuda_Click"/>
+        <Button x:Name="BtnRegresarACarreras" Content="Regresar al menu de Carreras" HorizontalAlignment="Left" Margin="590,302,0,0" VerticalAlignment="Top" Height="42" Width="164" Click="BtnRegresarACarreras_Click"/>
+        <Button x:Name="BtnGenerarReporteEnTexto" Content="Generar Reporte" HorizontalAlignment="Left" Margin="496,220,0,0" VerticalAlignment="Top" Height="42" Width="108" Click="BtnGenerarReporteEnTexto_Click"/>
+
+    </Grid>
+</Window>

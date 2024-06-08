@@ -188,3 +188,5 @@ C:\Users\ruben\OneDrive\Desktop\Programación-I-2024\CRUD en c#\MiPrimerCRUD\obj
 C:\Users\ruben\OneDrive\Desktop\Programación-I-2024\CRUD en c#\MiPrimerCRUD\obj\Debug\ManejoDeProveedores.g.cs
 C:\Users\ruben\OneDrive\Desktop\Programación-I-2024\CRUD en c#\MiPrimerCRUD\obj\Debug\ActualizarProveedores.baml
 C:\Users\ruben\OneDrive\Desktop\Programación-I-2024\CRUD en c#\MiPrimerCRUD\obj\Debug\ManejoDeProveedores.baml
+C:\Users\ruben\OneDrive\Desktop\Programación-I-2024\CRUD en c#\MiPrimerCRUD\obj\Debug\ActualizarVentas.g.cs
+C:\Users\ruben\OneDrive\Desktop\Programación-I-2024\CRUD en c#\MiPrimerCRUD\obj\Debug\ActualizarVentas.baml

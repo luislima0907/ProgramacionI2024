@@ -76,39 +76,48 @@ namespace MiPrimerCRUD
 
         private void BtnActualizarProducto_Click(object sender, RoutedEventArgs e)
         {
-            try
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("¿Quieres actualizar la informacion del producto?", "Mensaje", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == System.Windows.MessageBoxResult.Yes)
             {
-                // creamos una consulta parametrica para hacer posible la actualizacion de un registro
-                string consulta = $"UPDATE Articulo SET Seccion = @Seccion, NombreDelArticulo = @NombreDelArticulo, Precio = @Precio, PaisDeOrigen = @PaisDeOrigen, Proveedor = @Proveedor, Cantidad = @Cantidad WHERE Id = {IdDelProductoDesdeOtraVentana}";
-                SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
-                miConexionSql.Open();
-                miComandoSql.Parameters.AddWithValue("@Seccion", TxtActualizaSeccionProducto.Text);
-                miComandoSql.Parameters.AddWithValue("@NombreDelArticulo", TxtActualizaProducto.Text);
-                miComandoSql.Parameters.AddWithValue("@Precio", TxtActualizaPrecioProducto.Text);
-                //miComandoSql.Parameters.AddWithValue("@Fecha", TxtActualizaFechaProducto.Text);
-                miComandoSql.Parameters.AddWithValue("@PaisDeOrigen", TxtActualizaOrigenProducto.Text);
-                miComandoSql.Parameters.AddWithValue("@Proveedor", cboProveedores.SelectedValue);
-                miComandoSql.Parameters.AddWithValue("@Cantidad", TxtActualizaCantidadProducto.Text);
-                miComandoSql.ExecuteNonQuery();
+                try
+                {
+                    // creamos una consulta parametrica para hacer posible la actualizacion de un registro
+                    string consulta = $"UPDATE Articulo SET Seccion = @Seccion, NombreDelArticulo = @NombreDelArticulo, Precio = @Precio, PaisDeOrigen = @PaisDeOrigen, Proveedor = @Proveedor, Cantidad = @Cantidad WHERE Id = {IdDelProductoDesdeOtraVentana}";
+                    SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
+                    miConexionSql.Open();
+                    miComandoSql.Parameters.AddWithValue("@Seccion", TxtActualizaSeccionProducto.Text);
+                    miComandoSql.Parameters.AddWithValue("@NombreDelArticulo", TxtActualizaProducto.Text);
+                    miComandoSql.Parameters.AddWithValue("@Precio", TxtActualizaPrecioProducto.Text);
+                    //miComandoSql.Parameters.AddWithValue("@Fecha", TxtActualizaFechaProducto.Text);
+                    miComandoSql.Parameters.AddWithValue("@PaisDeOrigen", TxtActualizaOrigenProducto.Text);
+                    miComandoSql.Parameters.AddWithValue("@Proveedor", cboProveedores.SelectedValue);
+                    miComandoSql.Parameters.AddWithValue("@Cantidad", TxtActualizaCantidadProducto.Text);
+                    miComandoSql.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    miConexionSql.Close();
+                    MessageBox.Show($"Has actualizado el producto con exito");
+                    TxtActualizaSeccionProducto.Text = "";
+                    TxtActualizaProducto.Text = "";
+                    TxtActualizaPrecioProducto.Text = "";
+                    //TxtActualizaFechaProducto.Text = "";
+                    TxtActualizaOrigenProducto.Text = "";
+                    cboProveedores.SelectedValue = null;
+                    TxtActualizaCantidadProducto.Text = "";
+                    // this hace referencia a los objetos de una clase
+                    this.Close();
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-            finally
-            {
-                miConexionSql.Close();
-                MessageBox.Show($"Has actualizado el producto con exito");
-                TxtActualizaSeccionProducto.Text = "";
-                TxtActualizaProducto.Text = "";
-                TxtActualizaPrecioProducto.Text = "";
-                //TxtActualizaFechaProducto.Text = "";
-                TxtActualizaOrigenProducto.Text = "";
-                cboProveedores.SelectedValue = null;
-                TxtActualizaCantidadProducto.Text = "";
-                // this hace referencia a los objetos de una clase
-                this.Close();
-            }
+        }
+
+        private void BtnRegresaAVentanaProducto_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

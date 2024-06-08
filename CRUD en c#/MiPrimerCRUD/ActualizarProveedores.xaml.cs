@@ -40,31 +40,40 @@ namespace MiPrimerCRUD
 
         private void BtnActualizarProveedor_Click(object sender, RoutedEventArgs e)
         {
-            try
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("¿Quieres actualizar la informacion del proveedor?", "Mensaje", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == System.Windows.MessageBoxResult.Yes)
             {
-                // creamos una consulta parametrica para hacer posible la actualizacion de un registro
-                string consulta = $"UPDATE Proveedor SET Nombre = @Nombre, Direccion = @Direccion, Telefono = @Telefono WHERE Id = {IdDelProveedorDesdeOtraVentana}";// usamos el id que trajimos desde otra ventana
-                SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
-                miConexionSql.Open();
-                miComandoSql.Parameters.AddWithValue("@Nombre", TxtActualizaProveedor.Text);
-                miComandoSql.Parameters.AddWithValue("@Direccion", TxtActualizaDireccionProveedor.Text);
-                miComandoSql.Parameters.AddWithValue("@Telefono", TxtActualizaTelefonoProveedor.Text);
-                miComandoSql.ExecuteNonQuery();
+                try
+                {
+                    // creamos una consulta parametrica para hacer posible la actualizacion de un registro
+                    string consulta = $"UPDATE Proveedor SET Nombre = @Nombre, Direccion = @Direccion, Telefono = @Telefono WHERE Id = {IdDelProveedorDesdeOtraVentana}";// usamos el id que trajimos desde otra ventana
+                    SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
+                    miConexionSql.Open();
+                    miComandoSql.Parameters.AddWithValue("@Nombre", TxtActualizaProveedor.Text);
+                    miComandoSql.Parameters.AddWithValue("@Direccion", TxtActualizaDireccionProveedor.Text);
+                    miComandoSql.Parameters.AddWithValue("@Telefono", TxtActualizaTelefonoProveedor.Text);
+                    miComandoSql.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    miConexionSql.Close();
+                    MessageBox.Show($"Has actualizado al proveedor con exito");
+                    TxtActualizaProveedor.Text = "";
+                    TxtActualizaDireccionProveedor.Text = "";
+                    TxtActualizaTelefonoProveedor.Text = "";
+                    // this hace referencia a los objetos de una clase
+                    this.Close();
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-            finally
-            {
-                miConexionSql.Close();
-                MessageBox.Show($"Has actualizado al proveedor con exito");
-                TxtActualizaProveedor.Text = "";
-                TxtActualizaDireccionProveedor.Text = "";
-                TxtActualizaTelefonoProveedor.Text = "";
-                // this hace referencia a los objetos de una clase
-                this.Close();
-            }
+        }
+
+        private void BtnRegresaAVentanaProveedores_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

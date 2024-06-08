@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ruben\\OneDrive\\Desktop\\CrudDeEscuela\\CrudDeEscuela\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4CECE608-79D1-4F75-B810-E49E3F21B39D}|CrudDeEscuela.csproj|c:\\users\\ruben\\onedrive\\desktop\\cruddeescuela\\cruddeescuela\\manejodealumnos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4CECE608-79D1-4F75-B810-E49E3F21B39D}|CrudDeEscuela.csproj|solutionrelative:manejodealumnos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManejoDeAlumnos.xaml",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\CrudDeEscuela\\CrudDeEscuela\\ManejoDeAlumnos.xaml",
+              "RelativeDocumentMoniker": "ManejoDeAlumnos.xaml",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\CrudDeEscuela\\CrudDeEscuela\\ManejoDeAlumnos.xaml",
+              "RelativeToolTip": "ManejoDeAlumnos.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-08T02:54:23.261Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -8,13 +8,14 @@
         Title="ActualizarProveedores" Height="450" Width="800">
     <Grid>
         <Label Content="Nombre:" HorizontalAlignment="Left" Margin="169,73,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox x:Name="TxtActualizaProveedor" HorizontalAlignment="Left" Margin="278,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
-        <Button x:Name="BtnActualizarProveedor" Content="Actualizar" HorizontalAlignment="Left" Margin="494,144,0,0" VerticalAlignment="Top" Height="34" Width="86" Click="BtnActualizarProveedor_Click"/>
-        <Label Content="Direccion:" HorizontalAlignment="Left" Margin="169,119,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox x:Name="TxtActualizaDireccionProveedor" HorizontalAlignment="Left" Margin="278,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
-        <Label Content="Telefono:" HorizontalAlignment="Left" Margin="169,163,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox x:Name="TxtActualizaTelefonoProveedor" HorizontalAlignment="Left" Margin="278,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
+        <TextBox x:Name="TxtActualizaProveedor" HorizontalAlignment="Left" Margin="264,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
+        <Button x:Name="BtnActualizarProveedor" Content="Actualizar" HorizontalAlignment="Left" Margin="465,110,0,0" VerticalAlignment="Top" Height="34" Width="86" Click="BtnActualizarProveedor_Click"/>
+        <Label Content="Direccion:" HorizontalAlignment="Left" Margin="159,112,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox x:Name="TxtActualizaDireccionProveedor" HorizontalAlignment="Left" Margin="265,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
+        <Label Content="Telefono:" HorizontalAlignment="Left" Margin="167,149,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox x:Name="TxtActualizaTelefonoProveedor" HorizontalAlignment="Left" Margin="265,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
         <Label Content="Información del Proveedor:" HorizontalAlignment="Left" Margin="278,29,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Button x:Name="BtnRegresaAVentanaProveedores" Content="Regresar al menu proveedores" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="34" Width="168" Click="BtnRegresaAVentanaProveedores_Click"/>
 
     </Grid>
 </Window>

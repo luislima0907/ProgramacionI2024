@@ -1,0 +1,17 @@
+﻿<Window x:Class="CrudDeEscuela.ActualizarEstablecimiento"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrudDeEscuela"
+        mc:Ignorable="d"
+        Title="ActualizarEstablecimiento" Height="450" Width="800">
+    <Grid>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="183,73,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox x:Name="TxtActualizaEstablecimiento" HorizontalAlignment="Left" Margin="278,82,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Height="28"/>
+        <Button x:Name="BtnActualizarEstablecimiento" Content="Actualizar" HorizontalAlignment="Left" Margin="278,117,0,0" VerticalAlignment="Top" Height="34" Width="86" Click="BtnActualizarEstablecimiento_Click"/>
+        <Label Content="Información del Establecimiento:" HorizontalAlignment="Left" Margin="231,29,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Button x:Name="BtnRegresarAVentanaEstablecimiento" Content="Regresar al menu establecimientos" HorizontalAlignment="Left" Margin="552,117,0,0" VerticalAlignment="Top" Height="34" Width="162" Click="BtnRegresarAVentanaEstablecimiento_Click"/>
+
+    </Grid>
+</Window>
