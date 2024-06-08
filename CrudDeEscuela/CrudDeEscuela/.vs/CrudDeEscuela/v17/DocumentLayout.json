@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ruben\\OneDrive\\Desktop\\CrudDeEscuela\\CrudDeEscuela\\",
+  "WorkspaceRootPath": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\CrudDeEscuela\\CrudDeEscuela\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4CECE608-79D1-4F75-B810-E49E3F21B39D}|CrudDeEscuela.csproj|c:\\users\\ruben\\onedrive\\desktop\\cruddeescuela\\cruddeescuela\\manejodealumnos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4CECE608-79D1-4F75-B810-E49E3F21B39D}|CrudDeEscuela.csproj|c:\\users\\ruben\\onedrive\\desktop\\programaci\u00F3n-i-2024\\cruddeescuela\\cruddeescuela\\manejodealumnos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4CECE608-79D1-4F75-B810-E49E3F21B39D}|CrudDeEscuela.csproj|solutionrelative:manejodealumnos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -32,9 +32,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ManejoDeAlumnos.xaml",
-              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\CrudDeEscuela\\CrudDeEscuela\\ManejoDeAlumnos.xaml",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\CrudDeEscuela\\CrudDeEscuela\\ManejoDeAlumnos.xaml",
               "RelativeDocumentMoniker": "ManejoDeAlumnos.xaml",
-              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\CrudDeEscuela\\CrudDeEscuela\\ManejoDeAlumnos.xaml",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Desktop\\Programaci\u00F3n-I-2024\\CrudDeEscuela\\CrudDeEscuela\\ManejoDeAlumnos.xaml",
               "RelativeToolTip": "ManejoDeAlumnos.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-06-08T02:54:23.261Z",

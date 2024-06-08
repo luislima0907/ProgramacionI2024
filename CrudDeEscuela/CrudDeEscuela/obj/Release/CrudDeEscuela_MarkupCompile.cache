@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\ruben\OneDrive\Desktop\Programación-I-2024\CrudDeEscuela\CrudDeEscuela\obj\Debug\
+C:\Users\ruben\OneDrive\Desktop\Programación-I-2024\CrudDeEscuela\CrudDeEscuela\obj\Release\
 CrudDeEscuela
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\ruben\OneDrive\Desktop\Programación-I-2024\CrudDeEscuela\CrudDeEscuela\App.xaml
 13-1267025532
 
@@ -16,5 +16,5 @@ C:\Users\ruben\OneDrive\Desktop\Programación-I-2024\CrudDeEscuela\CrudDeEscuela
 55732070482
 ActualizarAlumnos.xaml;ActualizarCarreras.xaml;ActualizarEstablecimiento.xaml;ActualizarPromedioDeNotas.xaml;ActualizarSedes.xaml;ActualizarUsuarios.xaml;MainWindow.xaml;ManejoDeAlumnos.xaml;ManejoDeCarreras.xaml;ManejoDeEstablecimientos.xaml;ManejoDePromedioDeNotas.xaml;ManejoDeSedes.xaml;ManejoDeUsuarios.xaml;
 
-False
+True
 
